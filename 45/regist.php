@@ -24,7 +24,7 @@
 	. q($smoke) . ","
 	. q($p_sonota) . "\n";
 
-    $file = fopen("45/regist.csv", "a");
+    $file = fopen("regist.csv", "a");
     fwrite($file, e2s($data));
     fclose($file);
 
