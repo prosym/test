@@ -9,6 +9,7 @@
 	. q($p_name) . ","
 	. q($p_kana) . ","
 	. q($p_sex) . ","
+	. q($p_age) . ","
 	. q($p_org) . ","
 	. q($p_email) . ","
 	. q($p_address) . ","
@@ -27,7 +28,7 @@
 	. q($smoke) . ","
 	. q($p_sonota) . "\n";
 
-    $file = fopen("regist.csv", "a");
+    $file = fopen("/home/hidden/47/regist.csv", "a");
 //SJISは良くないですよ    fwrite($file, e2s($data));
     fwrite($file, $data);
     fclose($file);
@@ -40,6 +41,7 @@
 	"氏名          " . $p_name . "\n" .
 	"カナ氏名      " . $p_kana . "\n" .
 	"性別          " . $p_sex . "\n" .
+	"年齢          " . $p_age . "\n" .
 	"所属          " . $p_org . "\n" .
 	"電子メール    " . $p_email . "\n" .
 	"住所          " . str_replace("\n", "\n              ",
@@ -77,6 +79,7 @@
 	);
     if (mail($p_email, $subject, $message, $headers, $parameters)) {
         mail("prosym47@ipsj.or.jp", $subject, $message, $headers, $parameters);
+//        mail("gian@cs.uec.ac.jp", $subject, $message, $headers, $parameters);
         print($ok);
     } else {
         print($ng);
