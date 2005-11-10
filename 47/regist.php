@@ -28,7 +28,7 @@
 	. q($smoke) . ","
 	. q($p_sonota) . "\n";
 
-    $file = fopen("/home/hidden/47/regist.csv", "a");
+    $file = fopen("regist.csv", "a");
 //SJISは良くないですよ    fwrite($file, e2s($data));
     fwrite($file, $data);
     fclose($file);
