@@ -1,5 +1,5 @@
 <?php
-require_once "newregist_conf.php";
+require_once "lateregist_conf.php";
 session_start();
 
 //処理部分-------------------------------------------------
