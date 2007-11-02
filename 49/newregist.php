@@ -188,7 +188,7 @@ if($_POST['state']=='confirm' && $errCount==0){
 		print " / ";				print $_SESSION['Pipsj']." ".$_SESSION['Pknum'];
 	tr_Making('支払方法',0);		print $_SESSION['Ppay']."<br />";
 		print "送金/振り込み日 : ";	print $_SESSION['Psday'];
-	tr_Making('希望する部屋 <br /> (学生は4名1室)',0);	print $_SESSION['Proom']." ".$_SESSION['Paite'];
+	tr_Making('希望する部屋',0);	print $_SESSION['Proom']." ".$_SESSION['Paite'];
 	tr_Making('請求書の宛名',0);		print $_SESSION['Patena'];
 	tr_Making('領収書',0);		print $_SESSION['Prcpt'];
 	tr_Making('喫煙調査',0);		print $_SESSION['Psmoke'];
@@ -266,7 +266,6 @@ elseif($_POST['state']=='save'){
 	$datam.= "\n支払い方法:".$_SESSION['Ppay'];
 	$datam.= "\n支払い予定日:".$_SESSION['Psday'];
 	$datam.= "\n部屋希望:".$_SESSION['Proom'];
-	$datam.= "\n同室相手:".$_SESSION['Paite'];
 	$datam.= "\n請求書:".$_SESSION['Popt1'];
 	$datam.= "\n領収書:".$_SESSION['Prcpt'];
 	$datam.= "\n請求書宛名:".$_SESSION['Patena'];
@@ -342,13 +341,13 @@ else{
 		form_Radio(Ppay,$Payment2,$_SESSION['Ppay']);	print "<br />";
 		form_Radio(Ppay,$Payment3,$_SESSION['Ppay']);	print "<br />";
 		print "送金/振込み予定日"; pay_day(Psday);
-	tr_Making('※希望する部屋 <br /> (学生は4名1室)',$Keyroom);
+	tr_Making('※希望する部屋',$Keyroom);
 		form_Radio(Proom,$Stay1,$_SESSION['Proom']); print $Stay1cost."<br />";
-		form_Radio(Proom,$Stay2,$_SESSION['Proom']); print $Stay2cost." 同室相手：";
-				form_Text(Paite,$_SESSION['Paite'],20);	print "<br />";
+		form_Radio(Proom,$Stay2,$_SESSION['Proom']); print $Stay2cost."<br />";
 		form_Radio(Proom,$Stay3,$_SESSION['Proom']); print $Stay3cost."<br />";
 		form_Radio(Proom,$Stay4,$_SESSION['Proom']); print $Stay4cost."<br />";
-		print "※希望通りにならない場合もあります<br />";
+		print "同室希望の場合は，「その他ご要望」欄にその旨を記入し，部屋の人数分のお名前を列挙してください．<br />";
+		print "※部屋の人数や相部屋に関しては，希望通りにならない場合もあります．<br />";
 	tr_Making(add_flg($Needatena, '請求書などの宛名'),$Keyatena);
 		form_Text(Patena,$_SESSION['Patena'],30);
 	tr_Making(add_flg($Needrcpt, '領収書'),$Keyrcpt);
