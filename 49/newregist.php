@@ -197,10 +197,10 @@ if($_POST['state']=='confirm' && $errCount==0){
 	
 	print "<br />以上の内容で送信します。<br />\n";
 	print "<table border=0><tr><td>";
-	print "<form action=\"$script\" method=\"post\">";
-	print "<input type=hidden name=\"state\" value=\"return\">";
-	print "<input type=submit value=\" 戻る \">\n";
-	print "</form></td>";
+//	print "<form action=\"$script\" method=\"post\">";
+//	print "<input type=hidden name=\"state\" value=\"return\">";
+//	print "<input type=submit value=\" 戻る \">\n";
+//	print "</form></td>";
 	print "<td><form action=\"$script\" method=\"post\">\n";
 	print "<input type=hidden name=\"state\" value=\"save\">";
 	print "<input type=submit value=\" 送信 \">\n";
