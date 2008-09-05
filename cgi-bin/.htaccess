@@ -1,0 +1,2 @@
+Options +ExecCGI 
+AddType application/x-httpd-cgi .cgi .pl
