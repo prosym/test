@@ -117,7 +117,8 @@ print $q->header(-type=>'text/html', -charset=>'UTF-8');
 print $q->start_html(-lang=>'ja-JP',
 		     -title=>"$title",
 		     -charset=>'UTF-8', -encoding=>'UTF-8',
-		     -bgcolor=>'#FFC1C1', -linkcolor=>'#0000FF',
+#		     -bgcolor=>'#FFC1C1', -linkcolor=>'#0000FF',
+		     -bgcolor=>'#FFFFCC', -linkcolor=>'#0000FF',
 		     -alinkcolor=>'#0000FF', -vlinkcolor=>'#660099');
 
 # ロゴとタイトル
@@ -277,7 +278,7 @@ sub print_forms {
 	my $user_emailuser = $t->param('User.emailuser');
 	my $user_emaildomain = $t->param('User.emaildomain');
 	my $user_address = $t->param('User.address');
-	$user_address =~ s/\x0Dn|\x0D//g;
+#	$user_address =~ s/\x0Dn|\x0D//g;
 	my $user_phone = $t->param('User.phone');
 	$line =~ s/__USER_NAME__/\"$user_name\"/;
 	$line =~ s/__USER_AFFILI__/\"$user_affili\"/;
@@ -290,7 +291,7 @@ sub print_forms {
 	my $paper_title = $t->param('Paper.title');
 	my $paper_abst = $t->param('Paper.abst');
 	my $paper_demo = $t->param('Paper.demo');
-	$paper_abst =~ s/\x0Dn|\x0D//g;
+#	$paper_abst =~ s/\x0Dn|\x0D//g;
 	$line =~ s/__CHECKED_ORAL__/CHECKED/ if ($paper_type =~ /ORAL/);
 	$line =~ s/__CHECKED_POSTER__/CHECKED/ if ($paper_type =~ /POSTER/);
 	$line =~ s/__PAPER_TITLE__/\"$paper_title\"/;
@@ -338,7 +339,7 @@ sub print_forms {
 
 	if ($t->param('Notes.text') ne "") {
 	    my $text = $t->param('Notes.text');
-	    $text =~ s/\x0Dn|\x0D//g;
+#	    $text =~ s/\x0Dn|\x0D//g;
 	    $line =~ s/__NOTES_TEXT__/$text/;
 	}
 
@@ -398,17 +399,17 @@ sub save_params {
 	$cfg = new Config::Simple(syntax=>'ini');
     }
 
-    $cfg->param('User.name', encode("utf8", $q->param('User.name')));
-    $cfg->param('User.affili', encode("utf8", $q->param('User.affili')));
+    $cfg->param('User.name', $q->param('User.name'));
+    $cfg->param('User.affili', $q->param('User.affili'));
     $cfg->param('User.email', $pid);
     $cfg->param('User.passwd', $pwd);
     $cfg->param('User.emailuser', $q->param('User.emailuser'));
     $cfg->param('User.emaildomain', $q->param('User.emaildomain'));
-    $cfg->param('User.address', encode("utf8", $q->param('User.address')));
-    $cfg->param('User.phone', encode("utf8", $q->param('User.phone')));
+    $cfg->param('User.address', $q->param('User.address'));
+    $cfg->param('User.phone', $q->param('User.phone'));
     $cfg->param('Paper.type', $q->param('Paper.type'));
-    $cfg->param('Paper.title', encode("utf8", $q->param('Paper.title')));
-    $cfg->param('Paper.abst', encode("utf8", $q->param('Paper.abst')));
+    $cfg->param('Paper.title', $q->param('Paper.title'));
+    $cfg->param('Paper.abst', $q->param('Paper.abst'));
     $cfg->param('Paper.demo', $q->param('Paper.demo'));
 
     $cfg->param('Presenter.present', $q->param('Presenter.present'));
@@ -419,57 +420,57 @@ sub save_params {
     }
     $cfg->param('Presenter.status', $status);
 
-    $cfg->param('Author1.sname', encode("utf8", $q->param('Author1.sname')))
+    $cfg->param('Author1.sname', $q->param('Author1.sname'))
 	if ($q->param('Author1.sname') ne "");
-    $cfg->param('Author1.gname', encode("utf8", $q->param('Author1.gname')))
+    $cfg->param('Author1.gname', $q->param('Author1.gname'))
 	if ($q->param('Author1.gname') ne "");
-    $cfg->param('Author1.affili', encode("utf8", $q->param('Author1.affili')))
+    $cfg->param('Author1.affili', $q->param('Author1.affili'))
 	if ($q->param('Author1.affili') ne "");
 
-    $cfg->param('Author2.sname', encode("utf8", $q->param('Author2.sname')))
+    $cfg->param('Author2.sname', $q->param('Author2.sname'))
 	if ($q->param('Author2.sname') ne "");
-    $cfg->param('Author2.gname', encode("utf8", $q->param('Author2.gname')))
+    $cfg->param('Author2.gname', $q->param('Author2.gname'))
 	if ($q->param('Author2.gname') ne "");
-    $cfg->param('Author2.affili', encode("utf8", $q->param('Author2.affili')))
+    $cfg->param('Author2.affili', $q->param('Author2.affili'))
 	if ($q->param('Author2.affili') ne "");
 
-    $cfg->param('Author3.sname', encode("utf8", $q->param('Author3.sname')))
+    $cfg->param('Author3.sname', $q->param('Author3.sname'))
 	if ($q->param('Author3.sname') ne "");
-    $cfg->param('Author3.gname', encode("utf8", $q->param('Author3.gname')))
+    $cfg->param('Author3.gname', $q->param('Author3.gname'))
 	if ($q->param('Author3.gname') ne "");
-    $cfg->param('Author3.affili', encode("utf8", $q->param('Author3.affili')))
+    $cfg->param('Author3.affili', $q->param('Author3.affili'))
 	if ($q->param('Author3.affili') ne "");
 
-    $cfg->param('Author4.sname', encode("utf8", $q->param('Author4.sname')))
+    $cfg->param('Author4.sname', $q->param('Author4.sname'))
 	if ($q->param('Author4.sname') ne "");
-    $cfg->param('Author4.gname', encode("utf8", $q->param('Author4.gname')))
+    $cfg->param('Author4.gname', $q->param('Author4.gname'))
 	if ($q->param('Author4.gname') ne "");
-    $cfg->param('Author4.affili', encode("utf8", $q->param('Author4.affili')))
+    $cfg->param('Author4.affili', $q->param('Author4.affili'))
 	if ($q->param('Author4.affili') ne "");
 
-    $cfg->param('Author5.sname', encode("utf8", $q->param('Author5.sname')))
+    $cfg->param('Author5.sname', $q->param('Author5.sname'))
 	if ($q->param('Author5.sname') ne "");
-    $cfg->param('Author5.gname', encode("utf8", $q->param('Author5.gname')))
+    $cfg->param('Author5.gname', $q->param('Author5.gname'))
 	if ($q->param('Author5.gname') ne "");
-    $cfg->param('Author5.affili', encode("utf8", $q->param('Author5.affili')))
+    $cfg->param('Author5.affili', $q->param('Author5.affili'))
 	if ($q->param('Author5.affili') ne "");
 
-    $cfg->param('Author6.sname', encode("utf8", $q->param('Author6.sname')))
+    $cfg->param('Author6.sname', $q->param('Author6.sname'))
 	if ($q->param('Author6.sname') ne "");
-    $cfg->param('Author6.gname', encode("utf8", $q->param('Author6.gname')))
+    $cfg->param('Author6.gname', $q->param('Author6.gname'))
 	if ($q->param('Author6.gname') ne "");
-    $cfg->param('Author6.affili', encode("utf8", $q->param('Author6.affili')))
+    $cfg->param('Author6.affili', $q->param('Author6.affili'))
 	if ($q->param('Author6.affili') ne "");
 
-    $cfg->param('Author7.sname', encode("utf8", $q->param('Author7.sname')))
+    $cfg->param('Author7.sname', $q->param('Author7.sname'))
 	if ($q->param('Author7.sname') ne "");
-    $cfg->param('Author7.gname', encode("utf8", $q->param('Author7.gname')))
+    $cfg->param('Author7.gname', $q->param('Author7.gname'))
 	if ($q->param('Author7.gname') ne "");
-    $cfg->param('Author7.affili', encode("utf8", $q->param('Author7.affili')))
+    $cfg->param('Author7.affili', $q->param('Author7.affili'))
 	if ($q->param('Author7.affili') ne "");
 
 # 備考
-    $cfg->param('Notes.text', encode("utf8", $q->param('Notes.text')))
+    $cfg->param('Notes.text', $q->param('Notes.text'))
 	if ($q->param('Notes.text') ne "");
 
     $cfg->write($path . $fn);
@@ -582,7 +583,7 @@ sub print_confirmation_page {
 
     open(IN, $text) or die "Can't open the working file.\n";
     while (my $line = <IN>) {
-	print $line, $q->br, "\n";
+	print Encode::decode_utf8($line), $q->br, "\n";
     }
     close(IN);
 
@@ -623,7 +624,7 @@ sub print_confirmation_text {
     print OUT '申込み者所属：', $cfg->param('User.affili'), "\n";
     print OUT 'メールアドレス：', $cfg->param('User.emailuser') . "@" . $cfg->param('User.emaildomain'), "\n";
     my $address = $cfg->param('User.address');
-    $address =~ s/\x0Dn|\x0D//g;
+#    $address =~ s/\x0Dn|\x0D//g;
     print OUT '郵送先：', $address, "\n";
     print OUT '電話番号：', $cfg->param('User.phone'), "\n";
     print OUT "\n";
@@ -631,7 +632,7 @@ sub print_confirmation_text {
     print OUT '種別：ポスター', "\n" if ($cfg->param('Paper.type') eq "POSTER");
     print OUT '題目：', $cfg->param('Paper.title'), "\n";
     my $abst = $cfg->param('Paper.abst');
-    $abst =~ s/\x0Dn|\x0D//g;
+#    $abst =~ s/\x0Dn|\x0D//g;
     print OUT '概要：', $abst, "\n";
     print OUT 'デモ：';
     print OUT "あり\n" if ($cfg->param('Paper.demo') eq "YDEMO");
@@ -675,7 +676,7 @@ sub print_confirmation_text {
     print OUT "\n";
 
     my $text = $cfg->param('Notes.text');
-    $text =~ s/\x0Dn|\x0D//g;
+#    $text =~ s/\x0Dn|\x0D//g;
     if ($text ne "") {
 	print OUT "\n";
 	print OUT '備考：', $text, "\n";
@@ -703,7 +704,7 @@ sub print_final_page {
 	return 0;
     }
 
-    print $q->h2($cfg->param('User.name'), ' 様', $q->br, '発表申込みはこれで完了いたしました。', $q->br, '採否の結果は、幹事会での審議を経て、１０月下旬頃にお知らせいたします。', $q->br, 'また、原稿の提出〆切は１１月末の予定です。', $q->br, $q->br, 'お申込みありがとうございます。');
+    print $q->h2(Encode::decode_utf8($cfg->param('User.name')), ' 様', $q->br, $q->br, '発表申込みはこれで完了いたしました。', $q->br, '採否の結果は、幹事会での審議を経て、１０月下旬頃にお知らせいたします。', $q->br, 'また、原稿の提出〆切は１１月末の予定です。', $q->br, $q->br, 'お申込みありがとうございます。');
     print $q->h3('ご不明な点がございましたら',
 		 $q->a({href=>'mailto:' . $mail}, $mail),
 		 'までお問い合わせください。');
@@ -750,7 +751,7 @@ sub send_mail_passwd {
     my $subj = "プログラミング・シンポジウム発表申込み仮登録のお知らせ";
     my $mesg = "";
 
-    $mesg .= encode("utf8", $q->param('User.name')) . ' 様' . "\n\n";
+    $mesg .= Encode::decode_utf8($q->param('User.name')) . ' 様' . "\n\n";
     $mesg .= '下記のURLにアクセスして発表申込みを完了させて下さい。' . "\n\n";
     $mesg .= $url . "\n\n";
     $mesg .= '※注：この時点ではまだ申込みは完了していません。' . "\n\n";
@@ -766,6 +767,7 @@ sub send_mail_passwd {
     my %mailparams = (
 		"Content-Type" => 'text/plain; charset="iso-2022-jp"',
 		To             => $mailto,
+		Cc             => $mail,
 		From           => $mail,
 		Subject        => $subj,
 		Message        => $mesg,
@@ -792,14 +794,14 @@ sub send_mail_acceptance {
     $text = print_confirmation_text($pid, $pwd);
     open(IN, $text) or die "Can't open the working file.\n";
 
-    $mesg .= encode("utf8", $uname) .  ' 様' . "\n\n";
+    $mesg .= Encode::decode_utf8($uname) .  ' 様' . "\n\n";
     $mesg .= '下記の通り発表申込みを受付けました。' . "\n\n";
     $mesg .= '採否の結果は、幹事会での審議を経て、１０月下旬頃にお知らせいたします。' . "\n";
     $mesg .= 'また、原稿の提出〆切は１１月末の予定です。お申込みありがとうございます。' . "\n\n";
     $mesg .= 'ご不明な点がございましたら、' . $mail . ' までお問い合わせください。' . "\n\n";
 
     while (my $line = <IN>) {
-	$mesg .= $line;
+	$mesg .= Encode::decode_utf8($line);
     }
     close(IN);
 
@@ -814,6 +816,7 @@ sub send_mail_acceptance {
     my %mailparams = (
 		"Content-Type" => 'text/plain; charset="iso-2022-jp"',
 		To             => $mailto,
+		Cc             => $mail,
 		From           => $mail,
 		Subject        => $subj,
 		Message        => $mesg,
