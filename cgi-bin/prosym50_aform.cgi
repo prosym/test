@@ -868,6 +868,8 @@ sub send_mail_acceptance {
     #           メイル送信           #
     #--------------------------------#
     $subj = encode("MIME-Header-ISO_2022_JP", $subj);
+    # 全角の－や～を正規化
+    $mesg =~ tr/[\x{ff5e}\x{2225}\x{ff0d}\x{ffe0}\x{ffe1}\x{ffe2}]/[\x{301c}\x{2016}\x{2212}\x{00a2}\x{00a3}\x{00ac}]/;
     $mesg = encode("iso-2022-jp", $mesg);
     my %mailparams = (
 		"Content-Type" => 'text/plain; charset="iso-2022-jp"',
