@@ -274,12 +274,16 @@ sub print_forms {
 	$line =~ s/__[A-Z,0-9,_]*_MARK__//; # 残り制御用フラグを消去
 
 	my $user_name = $t->param('User.name');
+	$user_name =~ s/\\comma\\/,/g;		# エスケープした ',' を戻す
 	my $user_affili = $t->param('User.affili');
+	$user_affili =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 	my $user_emailuser = $t->param('User.emailuser');
 	my $user_emaildomain = $t->param('User.emaildomain');
 	my $user_address = $t->param('User.address');
-#	$user_address =~ s/\x0Dn|\x0D//g;
+	$user_address =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+	$user_address =~ s/\x0Dn|\x0D//g;
 	my $user_phone = $t->param('User.phone');
+	$user_phone =~ s/\\comma\\/,/g;		# エスケープした ',' を戻す
 	$line =~ s/__USER_NAME__/\"$user_name\"/;
 	$line =~ s/__USER_AFFILI__/\"$user_affili\"/;
 	$line =~ s/__USER_EMAILUSER__/\"$user_emailuser\"/;
@@ -289,7 +293,9 @@ sub print_forms {
 
 	my $paper_type = $t->param('Paper.type');
 	my $paper_title = $t->param('Paper.title');
+	$paper_title =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 	my $paper_abst = $t->param('Paper.abst');
+	$paper_abst =~ s/\\comma\\/,/g;		# エスケープした ',' を戻す
 	my $paper_demo = $t->param('Paper.demo');
 #	$paper_abst =~ s/\x0Dn|\x0D//g;
 	$line =~ s/__CHECKED_ORAL__/CHECKED/ if ($paper_type =~ /ORAL/);
@@ -339,6 +345,7 @@ sub print_forms {
 
 	if ($t->param('Notes.text') ne "") {
 	    my $text = $t->param('Notes.text');
+	    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 #	    $text =~ s/\x0Dn|\x0D//g;
 	    $line =~ s/__NOTES_TEXT__/$text/;
 	}
@@ -399,17 +406,42 @@ sub save_params {
 	$cfg = new Config::Simple(syntax=>'ini');
     }
 
-    $cfg->param('User.name', $q->param('User.name'));
-    $cfg->param('User.affili', $q->param('User.affili'));
+    my $text = "";
+
+#    $cfg->param('User.name', $q->param('User.name'));
+    $text = $q->param('User.name');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('User.name', $text);
+#    $cfg->param('User.affili', $q->param('User.affili'));
+    $text = $q->param('User.affili');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('User.affili', $text);
+
     $cfg->param('User.email', $pid);
     $cfg->param('User.passwd', $pwd);
     $cfg->param('User.emailuser', $q->param('User.emailuser'));
     $cfg->param('User.emaildomain', $q->param('User.emaildomain'));
-    $cfg->param('User.address', $q->param('User.address'));
-    $cfg->param('User.phone', $q->param('User.phone'));
+
+#    $cfg->param('User.address', $q->param('User.address'));
+    $text = $q->param('User.address');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('User.address', $text);
+#    $cfg->param('User.phone', $q->param('User.phone'));
+    $text = $q->param('User.phone');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('User.phone', $text);
+
     $cfg->param('Paper.type', $q->param('Paper.type'));
-    $cfg->param('Paper.title', $q->param('Paper.title'));
-    $cfg->param('Paper.abst', $q->param('Paper.abst'));
+
+#    $cfg->param('Paper.title', $q->param('Paper.title'));
+    $text = $q->param('Paper.title');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('Paper.title', $text);
+#    $cfg->param('Paper.abst', $q->param('Paper.abst'));
+    $text = $q->param('Paper.abst');
+    $text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+    $cfg->param('Paper.abst', $text);
+
     $cfg->param('Paper.demo', $q->param('Paper.demo'));
 
     $cfg->param('Presenter.present', $q->param('Presenter.present'));
@@ -470,8 +502,12 @@ sub save_params {
 	if ($q->param('Author7.affili') ne "");
 
 # 備考
-    $cfg->param('Notes.text', $q->param('Notes.text'))
-	if ($q->param('Notes.text') ne "");
+    if ($q->param('Notes.text') ne "") {
+#	$cfg->param('Notes.text', $q->param('Notes.text'))
+	$text = $q->param('Notes.text');
+	$text =~ s/,/\\comma\\/g;	# ','があるとConfig::Simpleが配列扱いする
+	$cfg->param('Notes.text', $text);
+    }
 
     $cfg->write($path . $fn);
     $cfg->close();
@@ -620,18 +656,37 @@ sub print_confirmation_text {
 
     my $cfg = new Config::Simple($path . $fn . ".ini");
 
-    print OUT '申込み者氏名：', $cfg->param('User.name'), "\n";
-    print OUT '申込み者所属：', $cfg->param('User.affili'), "\n";
+    my $text = "";
+
+#    print OUT '申込み者氏名：', $cfg->param('User.name'), "\n";
+    $text = $cfg->param('User.name');
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    print OUT '申込み者氏名：', $text, "\n";
+
+#    print OUT '申込み者所属：', $cfg->param('User.affili'), "\n";
+    $text = $cfg->param('User.affili');
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    print OUT '申込み者所属：', $text, "\n";
+
     print OUT 'メールアドレス：', $cfg->param('User.emailuser') . "@" . $cfg->param('User.emaildomain'), "\n";
     my $address = $cfg->param('User.address');
+    $address =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 #    $address =~ s/\x0Dn|\x0D//g;
     print OUT '郵送先：', $address, "\n";
-    print OUT '電話番号：', $cfg->param('User.phone'), "\n";
+#    print OUT '電話番号：', $cfg->param('User.phone'), "\n";
+    $text = $cfg->param('User.phone');
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    print OUT '電話番号：', $text, "\n";
+
     print OUT "\n";
     print OUT '種別：講演', "\n" if ($cfg->param('Paper.type') eq "ORAL");
     print OUT '種別：ポスター', "\n" if ($cfg->param('Paper.type') eq "POSTER");
-    print OUT '題目：', $cfg->param('Paper.title'), "\n";
+#    print OUT '題目：', $cfg->param('Paper.title'), "\n";
+    $text = $cfg->param('Paper.title');
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    print OUT '題目：', $text, "\n";
     my $abst = $cfg->param('Paper.abst');
+    $abst =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 #    $abst =~ s/\x0Dn|\x0D//g;
     print OUT '概要：', $abst, "\n";
     print OUT 'デモ：';
@@ -675,7 +730,8 @@ sub print_confirmation_text {
     }
     print OUT "\n";
 
-    my $text = $cfg->param('Notes.text');
+    $text = $cfg->param('Notes.text');
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 #    $text =~ s/\x0Dn|\x0D//g;
     if ($text ne "") {
 	print OUT "\n";
