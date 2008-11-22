@@ -7,6 +7,8 @@ use Jcode;
 use Config::Simple;
 use File::Copy;
 use Mail::Sendmail;
+use Encode;
+use utf8;
 
 my $title  = "第50回プログラミング・シンポジウム 発表原稿提出完了";
 # http://www2u.biglobe.ne.jp/~MAS/perl/waza/yen.html
@@ -20,6 +22,8 @@ my $path   = $c->param('Prosym50.datahome') . $q->param('did');
 my $htpath = $c->param('Prosym50.htdocshome') . $q->param('did');
 my $regist = $c->param('Prosym50.registurl');
 $c->close;
+
+my $text = "";
 
 #==================================================#
 #                  メインルーチン                  #
@@ -113,9 +117,15 @@ $mesg .= '日時：' . $cfg->param('General.date') . "\n";
 $mesg .= '種別：';
 $mesg .= "講演\n" if ($cfg->param('Paper.type') eq "ORAL");
 $mesg .= "ポスター\n" if ($cfg->param('Paper.type') eq "POSTER");
-$mesg .= '題目：' . $cfg->param('Paper.title') . "\n";
+$mesg .= '題目：';
+$text = Encode::decode_utf8($cfg->param('Paper.title'));
+$text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+$mesg .= $text . "\n";
 if ($cfg->param('Paper.subtitle') ne "") {
-    $mesg .= '副題目：' . $cfg->param('Paper.subtitle') . "\n";
+    $mesg .= '副題目：';
+    $text = Encode::decode_utf8($cfg->param('Paper.subtitle'));
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    $mesg .= $text . "\n";
 }
 $mesg .= 'デモ：';
 $mesg .= "あり\n" if ($cfg->param('Paper.demo') eq "YDEMO");
@@ -126,9 +136,11 @@ for my $i ( 1 .. 7 ) {
     my $arg = "Author" . $i;
     next if ($cfg->param("$arg" . ".sname") eq "");
     $mesg .= "著者$i：";
-    $mesg .= $cfg->param("$arg" . ".sname") . " " . $cfg->param("$arg" . ".gname");
+    $mesg .= Encode::decode_utf8($cfg->param("$arg" . ".sname")) . " " . Encode::decode_utf8($cfg->param("$arg" . ".gname"));
     $mesg .= ' / ';
-    $mesg .= $cfg->param("$arg" . ".affili");
+    $text = Encode::decode_utf8($cfg->param("$arg" . ".affili"));
+    $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
+    $mesg .= $text;
     $mesg .= ' / 登壇' if ($arg eq $cfg->param('Presenter.present'));
     $mesg .= "\n";
 }
@@ -159,35 +171,35 @@ $mesg .= "\n";
 
 #---- 通信欄 ----
 if ($cfg->param('Notes.text2') ne "") {
-    my $text = $cfg->param('Notes.text2');
+    $text = Encode::decode_utf8($cfg->param('Notes.text2'));
     $text =~ s/\\comma\\/,/g;	# エスケープした ',' を戻す
 #    $text =~ s/\x0Dn//g;
-    $text = Encode::decode_utf8($text);
     $mesg .= '通信欄：' . $text . "\n";
 }
+
+$mesg .= '--' . "\n";
+$mesg .= '情報処理学会 プログラミング・シンポジウム幹事会' . "\n";
 
 #--------------------------------#
 #           メイル送信           #
 #--------------------------------#
 
 my $subj = 'プログラミング・シンポジウム発表原稿提出完了のお知らせ';
-
 $subj = encode("MIME-Header-ISO_2022_JP", $subj);
-$mesg = encode("iso-2022-jp", $mesg);
-    my %mailparams = (
-		"Content-Type" => 'text/plain; charset="iso-2022-jp"',
-		To             => $mailto,
-		Cc             => $mail,
-		From           => $mail,
-		Subject        => $subj,
-		Message        => $mesg,
-		);
-    sendmail(%mailparams);
 
-#my $mailto = $cfg->param('User.email');
-#$mailto =~ s/,/ /g;
-#my $cmd = 'nkf -j ' . $mesgfile . ' | mail -a "From: ' . $admin2 . '" -s "' . $subj . '" -c ' . $admin2 . ' ' . $mailto;
-#system $cmd;
+# 全角の－や～を正規化
+$mesg =~ tr/[\x{ff5e}\x{2225}\x{ff0d}\x{ffe0}\x{ffe1}\x{ffe2}]/[\x{301c}\x{2016}\x{2212}\x{00a2}\x{00a3}\x{00ac}]/;
+$mesg = encode("iso-2022-jp", $mesg);
+
+my %mailparams = (
+	"Content-Type" => 'text/plain; charset="iso-2022-jp"',
+	To             => $cfg->param('User.email'),
+	Cc             => $admin2,
+	From           => $admin2,
+	Subject        => $subj,
+	Message        => $mesg,
+);
+sendmail(%mailparams);
 
 #--------------------------------#
 #           正常終了             #
