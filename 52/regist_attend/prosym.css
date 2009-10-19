@@ -1,0 +1,39 @@
+#head {
+ background-color:#eefeff;
+ text-align:right;
+}
+
+#content {
+ margin: 10px, 0px
+}
+
+#foot {
+ background-color:#eefffe;
+ text-align:left;
+}
+
+.error {
+ font-style:italic;
+ color:red;
+}
+
+tr.head {
+ background-color:#eeeeee
+}
+
+td.key {
+ background-color:#ffeeee
+}
+td.val {
+ background-color:#eeeeff
+}
+
+.message {
+ margin: 50px
+}
+
+.error_class {
+ font-style:italic;
+ color:red;
+ margin: 0px
+}
