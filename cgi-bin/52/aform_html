@@ -1,0 +1,144 @@
+<h2>手順１ ： 以下のフォームを埋めて、ページの末尾にある「次へ→」ボタンより次に進んでください。</h2>
+
+■１ 連絡先
+<table border="1" celspaceing="0" cellspan="0">
+<!-- 申込み者氏名 -->
+<tr valign="top" align="left">
+<td>__USER_NAME_MARK__申込み者氏名：</td>
+<td><input type="text" size="40" name="User.name" value=__USER_NAME__></td>
+</tr>
+<!-- 申込み者所属 -->
+<tr valign="top" align="left">
+<td>__USER_AFFILI_MARK__申込み者所属：</td>
+<td><input type="text" size="40" name="User.affili" value=__USER_AFFILI__></td>
+</tr>
+<!-- メールアドレス -->
+<tr valign="top" align="left">
+<td>__USER_EMAIL_MARK__メールアドレス：</td>
+<td><input type="text" size="10" name="User.emailuser" value=__USER_EMAILUSER__>
+@
+<input type="text" size="25" name="User.emaildomain" value=__USER_EMAILDOMAIN__>
+<!-- 郵送先 -->
+<tr valign="top" align="left">
+<td>__USER_ADDRESS_MARK__原稿執筆案内<BR>郵送先：</td>
+<td><textarea rows="2" cols="30" name="User.address">__USER_ADDRESS__</textarea></td>
+</tr>
+<!-- 電話番号 -->
+<tr valign="top" align="left">
+<td>__USER_PHONE_MARK__電話番号：</td>
+<td><input type="text" size="40" name="User.phone" value=__USER_PHONE__></td>
+</tr>
+</table>
+<br><br>
+■２ 発表種別・題目・概要
+<table border="1" celspaceing="0" cellspan="0">
+<!-- 種別 -->
+<tr valign="top" align="left">
+<td>__PAPER_TYPE_MARK__種別：</td>
+<td><input type="radio" name="Paper.type" value="ORAL" __CHECKED_ORAL__>講演　　
+<input type="radio" name="Paper.type" value="POSTER" __CHECKED_POSTER__>ポスター</tr>
+<tr valign="top" align="left">
+<!-- 題目 -->
+<tr valign="top" align="left">
+<td>__PAPER_TITLE_MARK__題目：</td>
+<td><input type="text" size="60" name="Paper.title" value=__PAPER_TITLE__></td>
+</tr>
+<!-- 発表概要 -->
+<tr valign="top" align="left">
+<td>__PAPER_ABST_MARK__発表概要<font color="brown">※1</font>：<br>700字〜<br>1,000字<br>程度</td>
+<td><textarea name="Paper.abst" rows="10" cols="42">__PAPER_ABST__</textarea></td>
+</tr>
+<!-- 種別 -->
+<tr valign="top" align="left">
+<td>__PAPER_TYPE_DEMO__デモの有無<font color="brown">※2</font>：</td>
+<td><input type="radio" name="Paper.demo" value="YDEMO" __CHECKED_DEMO__>デモあり /
+<input type="radio" name="Paper.demo" value="NODEMO" __CHECKED_NODEMO__>デモなし</tr>
+<tr valign="top" align="left">
+</table>
+<font color="brown">※1：発表概要に基づき採否を決定いたします。研究キーワードを含めながら解りやすく、かつ、簡潔に記述してください。</font><br>
+<font color="brown">※2：講演の他に発表内容のソフトや機器のデモを受付けます。ポスターの場合も同様です。会場準備の都合上、その有無をお知らせください。</font>
+<br><br>
+■３ 原稿の著者（共著の場合は原稿に記載される著者全員）
+<table border="1" celspaceing="0" cellspan="0">
+<tr valign="top" align="center">
+<td></td><td>氏</td><td>名</td><td>登壇発表者</td><td>所属</td>
+</tr>
+<!-- 著者1 -->
+<tr>
+<td>__AUTHOR1_MARK__著者1</td>
+<td><input type="text" size="10" name="Author1.sname" value=__AUTHOR1_SNAME__></td>
+<td><input type="text" size="10" name="Author1.gname" value=__AUTHOR1_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author1" __CHECKED_AUTHOR1__></td>
+<td><input type="text" size="30" name="Author1.affili" value=__AUTHOR1_AFFILI__></td>
+</tr>
+<!-- 著者2 -->
+<tr>
+<td>__AUTHOR2_MARK__著者2</td>
+<td><input type="text" size="10" name="Author2.sname" value=__AUTHOR2_SNAME__></td>
+<td><input type="text" size="10" name="Author2.gname" value=__AUTHOR2_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author2" __CHECKED_AUTHOR2__></td>
+<td><input type="text" size="30" name="Author2.affili" value=__AUTHOR2_AFFILI__></td>
+</tr>
+<!-- 著者3 -->
+<tr>
+<td>__AUTHOR3_MARK__著者3</td>
+<td><input type="text" size="10" name="Author3.sname" value=__AUTHOR3_SNAME__></td>
+<td><input type="text" size="10" name="Author3.gname" value=__AUTHOR3_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author3" __CHECKED_AUTHOR3__></td>
+<td><input type="text" size="30" name="Author3.affili" value=__AUTHOR3_AFFILI__></td>
+</tr>
+<!-- 著者4 -->
+<tr>
+<td>__AUTHOR4_MARK__著者4</td>
+<td><input type="text" size="10" name="Author4.sname" value=__AUTHOR4_SNAME__></td>
+<td><input type="text" size="10" name="Author4.gname" value=__AUTHOR4_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author4" __CHECKED_AUTHOR4__></td>
+<td><input type="text" size="30" name="Author4.affili" value=__AUTHOR4_AFFILI__></td>
+</tr>
+<!-- 著者5 -->
+<tr>
+<td>__AUTHOR5_MARK__著者5</td>
+<td><input type="text" size="10" name="Author5.sname" value=__AUTHOR5_SNAME__></td>
+<td><input type="text" size="10" name="Author5.gname" value=__AUTHOR5_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author5" __CHECKED_AUTHOR5__></td>
+<td><input type="text" size="30" name="Author5.affili" value=__AUTHOR5_AFFILI__></td>
+</tr>
+<!-- 著者6 -->
+<tr>
+<td>__AUTHOR6_MARK__著者6</td>
+<td><input type="text" size="10" name="Author6.sname" value=__AUTHOR6_SNAME__></td>
+<td><input type="text" size="10" name="Author6.gname" value=__AUTHOR6_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author6" __CHECKED_AUTHOR6__></td>
+<td><input type="text" size="30" name="Author6.affili" value=__AUTHOR6_AFFILI__></td>
+</tr>
+<!-- 著者7 -->
+<tr>
+<td>__AUTHOR7_MARK__著者7</td>
+<td><input type="text" size="10" name="Author7.sname" value=__AUTHOR7_SNAME__></td>
+<td><input type="text" size="10" name="Author7.gname" value=__AUTHOR7_GNAME__></td>
+<td><input type="radio" name="Presenter.present" value="Author7" __CHECKED_AUTHOR7__></td>
+<td><input type="text" size="30" name="Author7.affili" value=__AUTHOR7_AFFILI__></td>
+</tr>
+</table>
+<font color="brown">注：著者が８名以上である場合や登壇発表者が複数である場合など、上記の入力フォームでは表現できない事項は下の「通信欄」に記載してください。</font>
+<br><br>
+■４ 登壇発表者の区分
+<table border="1" celspaceing="0" cellspan="0">
+<!-- 種別 -->
+<tr valign="top" align="left">
+<td>__PRESENTER_STATUS_MARK__<input type="checkbox" name="Presenter.status" value="S" __CHECKED_STUDENT__>学生 /<input type="checkbox" name="Presenter.status" value="G" __CHECKED_GENERAL__>社会人</td>
+</tr>
+<tr><td><font color="brown" size="-1">当てはまるもの全てをチェックしてください</font></td></tr>
+</table>
+<font color="brown">注：学生の登壇発表者は所定の参加費割引を受けることができます。ただし、社会人学生は割引対象外です。</font>
+<br><br>
+■５ 備考
+<table border="1" celspaceing="0" cellspan="0">
+<tr valign="top" align="left">
+<td>通信欄：<br><br>上記フォームでは<br>表現できない事項<br>やご要望など</td>
+<td><textarea name="Notes.text" rows="10" cols="40">__NOTES_TEXT__</textarea></td>
+</tr>
+</table>
+<input type="reset" value="入力全クリア">
+<br><br><br>
+<input type="submit" value="　次へ→　">
