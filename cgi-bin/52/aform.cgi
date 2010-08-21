@@ -16,7 +16,7 @@ use utf8;
 #        各種パラメータを        #
 #        読み込む                #
 #--------------------------------#
-my $c = new Config::Simple('51.ini')
+my $c = new Config::Simple('52.ini')
     or die "Can't Read Configuration file.\n";
 my $path = $c->param('Prosym.datapath');
 my $mark = $c->param('Prosym.mark');
@@ -29,7 +29,7 @@ $c->close;
 $path = $path . "/" if ($path !~ /.*\/$/);
 
 my $q = new CGI;
-my $title = "第51回プログラミング・シンポジウム 発表申込み";
+my $title = "第52回プログラミング・シンポジウム 発表申込み";
 # http://www2u.biglobe.ne.jp/~MAS/perl/waza/yen.html
 my $errmark = '<font color="brown">*</font>';
 
