@@ -1,10 +1,10 @@
-#SetEnv APPLICATION_ENV production
-SetEnv APPLICATION_ENV development
+SetEnv APPLICATION_ENV production
+#SetEnv APPLICATION_ENV development
 SetEnv APPLICATION_PATH /var/www/prosym/hidden/52/regist_attend/
 SetEnv BASE_URI /prosym/52/regist_attend/
 
 RewriteEngine On
-RewriteBase /prosym/51/regist_attend/
+RewriteBase /prosym/52/regist_attend/
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
