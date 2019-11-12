@@ -1,0 +1,344 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<title>第61回　プログラミング・シンポジウム</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-Style-Type" content="text/css">
+<meta content="Copyright(c) 2019 IPSJ Prosym. All Rights Reserved" name="description">
+<meta http-equiv="Content-Language" content="ja">
+<link title="style" type="text/css" rel="stylesheet">
+<style type="text/css">
+	body {
+		color: black;
+		background-color: #ccffcc
+	}
+	p {
+		margin: 2em;
+		text-indent: 1em;
+		line-height: 1.2em
+	}
+	p.right {
+		margin: 0em;
+		text-align: right
+	}
+	dl.presentation {
+		text-indent: 1em;
+		text-align: left
+	}
+	dl.participation {
+		margin-top: 1em;
+		margin-left: 1em
+	}
+	dt.participation {
+		margin-top: 1em;
+		margin-bottom: 0.5em
+	}
+	li.em {
+		margin-top: 1em;
+		color: red
+	}
+	dd.em {
+		color: red
+	}
+	h2 {
+		font-size: 1.5em;
+		color: #336699
+	}
+	h3 {
+		border-top-width: thin;
+		padding-right: 0.6em;
+		padding-left: 0.6em;
+		font-size: 1.2em;
+		padding-bottom: 0.6em;
+		border-left: #4d6ca3 thin solid;
+		border-top-color: #4d6ca3;
+		padding-top: 0.6em;
+		border-bottom: #4d6ca3 thin solid;
+		border-right-width: thin;
+		border-right-color: #4d6ca3
+	}
+	h4 {
+		font-size: 1em;
+		color: #000000
+	}
+	a:link {
+		color: #336699
+	}
+	a:visited {}
+	a:active {
+		color: #000066
+	}
+	a:hover {
+		color: #00ff00
+	}
+	strong {
+		color: #cc0000;
+	}
+</style>
+</head>
+<body>
+
+<h1><img src="images/prosym-64x64.png" />第60回　プログラミング・シンポジウム</h1>
+
+<hr />
+<h3>What's New</h3>
+    <dl>
+        <dt>2019/4/xx</dt>
+            <dd>試しに作成しました</dd>
+            <dd>details, summaryタグによる「概要」を実装してみた。Chromeとfirefoxでは動作確認したが、他が不明。
+            現地配付PDFから概要をコピペして貼付けたが、多くのPDFでテキストのコピペができなかった。PDF作成環境の問題？
+            概要が凝っている場合にうまく行かないかも知れない？（details/summaryにどのくらいの柔軟性があるのかを知らない）</dd>
+    </dl>
+<hr />
+
+
+	<dl>
+		<dt>日程
+		</dt>
+		<dd>2019年1月11日(金) 13:00 受付開始(予定)
+		</dd>
+		<dd>2019年1月11日(金) 13:30 開会
+		</dd>
+		<dd>2019年1月13日(日) 12:10 閉会
+		</dd><dt>会場
+		</dt>
+		<dd><a href="https://www.laforet.co.jp/ito/">ラフォーレ倶楽部伊東温泉湯の庭</a></dd>
+	</dl>
+
+	<hr />
+
+	<br />
+
+	<h2>第1日 1月11日</h2>
+	<h4>開会，ガイダンス 13:30 - 13:40</h4>
+	<h3>セッション1 13:40 - 15:00</h3>
+	<dl class="presentation">
+		<dt>大衆化におけるプログラミングのバリアフリー</dt>
+		<dd>原田康徳 (Digital Pocket LLC)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>グラフ並列分散処理のための計算モデルを選択可能な領域特化言語</dt>
+		<dd>秋葉柊哉, 岩崎英哉 (電気通信大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+
+	<h3>セッション2 15:20 - 16:40</h3>
+	<dl class="presentation">
+		<dt>CbC を用いたPerl6 処理系</dt>
+		<dd>清水隆博, 河野真治 (琉球大学)</dd>
+		<dd><details><summary>概要</summary>スクリプト言語である Perl5 の後継言語として Perl6 が現在開発されている． Perl6 は
+設計と実装が区分されており様々な処理系が開発されている．現在主流な Perl6 は Rakudo
+と言われるプロジェクトである． Rakudo では Perl6 自体を NQP(NotQuitPerl) と言われる
+Perl6 のサブセットで記述し , NQP を VM が解釈するという処理の流れになっている．こ
+の VM は任意の VM が選択できるようになっており , 主に利用されている VM に C で書か
+れた MoarVM が存在する． MoarVM は JIT コンパイルなどをサポートしているが , 全体的
+な起動時間及び処理速度が Perl5 と比較し非常に低速である．この問題を解決するために
+Continuation based C (CbC) という言語を一部用いて MoarVM の書き換えを行う． CbC
+は C よりも細かな単位で記述が可能である為 , 言語処理系の実装に適していると考えられる .
+CbC に関する今までの研究においては , 言語処理系に CbC を利用した事例が少ない . その
+			為 , 本稿では CbC を言語処理系に用いた場合の利点やデバッグ手法などについても述べる .</details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>JVM 上の動的言語のための抽象解釈の実装</dt>
+		<dd>馬谷誠二 (京都大学)</dd>
+		<dd><details><summary>概要</summary>本論文では，現在我々が開発を行なっている Clojure 言語用の抽象解釈器 OPAL/Clj
+の実装について説明する． OPAL/Clj は， JVM バイトコードレベルの抽象解釈と Clojure
+コードの「具象解釈」を混ぜながら実行することにより，動的で複雑な言語機能を使用する
+現実的なコードであっても，その振舞いをある程度正確に解析することが可能である．バイ
+トコードの抽象解釈には既存のフレームワークを用いているが，混ぜながらの実行を実現す
+るには，単純にフレームワークの機能を呼び出すのではなく， Clojure コンパイラにも修正
+を加える必要がある．本論文では， Clojure コンパイラにどのような修正を行ったかを中心
+に実装について詳述する．</details></dd>
+	</dl>
+
+	<h3>ポスターセッション紹介，各種報告，スポンサー講演 (株式会社フィックスターズ) 17:10 - 18:00</h3>
+
+	<h4>夕食 18:00</h4>
+	<h4>ポスター・デモセッション，GPCC 19:30 - 21:00</h4>
+
+	<dl class="presentation">
+		<dt>&lt;ポスター&gt; 自由文による思考プログラミング</dt>
+		<dd>中村圭介 (ナレルシステム株式会社)</dd>
+	</dl>
+	<dl class="presentation">
+		<dt>&lt;ポスター&gt; 継続を中心とした言語 Gears OS のデモンストレーション</dt>
+		<dd>宮城光希, 河野真治 (琉球大学)</dd>
+	</dl>
+	<dl class="presentation">
+		<dt>&lt;ポスター&gt; 日本語スマートコントラクト記述の実現に向けて</dt>
+		<dd>渡邉遥輔 (横浜国立大学), 松本彩花 (日本女子大学), 多田拓 (横浜国立大学), 倉光君郎 (日本女子大学)</dd>
+	</dl>
+	<dl class="presentation">
+		<dt>&lt;ポスター&gt; 解析表現文法をベースにしたトランスパイラフレームワークの設計と実装</dt>
+		<dd>多田拓, 渡邉遥輔, 加瀬豊, 山口大輔 (横浜国立大学), 倉光君郎 (日本女子大学)</dd>
+	</dl>
+	<dl class="presentation">
+		<dt>&lt;デモ&gt; 大衆化におけるプログラミングのバリアフリー</dt>
+		<dd>原田康徳 (Digital Pocket LLC)</dd>
+	</dl>
+	<dl class="presentation">
+		<dt>&lt;デモ&gt; JVM 上の動的言語のための抽象解釈の実装</dt>
+		<dd>馬谷誠二 (京都大学)</dd>
+	</dl>
+
+	<br />
+
+	<h2>第2日 1月12日</h2>
+	<h3>セッション3 9:00 - 10:20</h3>
+	<dl class="presentation">
+		<dt>ニューラルネットワークによる2048 プレイヤの内部動作解析</dt>
+		<dd>松崎公紀, 寺村舞童華 (高知工科大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>本の厚みによる歪みを考慮した光学文字認識</dt>
+		<dd>比留川翔哉, 丸山一貴 (明星大学)</dd>
+		<dd><details><summary>概要</summary>近年 , 様々な光学文字認識サービスが利用できるが , 歪み補正や , 平滑化などの適切な
+補正が行われず精度低下の原因になる . 本研究は , 本の厚みによる歪みに近似した画像を生
+成し , 畳み込みニューラルネットワークを用いて文字認識を行う . 本研究では , 厚みのある本
+を見開きにした場合に左右に湾曲する歪みを前提とする . そのため , フォントデータから生
+成した文字画像を OpenCV の remap メソッドを用いて歪ませることで , 学習データを生成
+した . 提案手法の精度は , 生成した画像のホールドアウト検証では 99.97% となったものの ,
+撮影した書籍の文字画像では既存手法より劣る結果となった . この結果は , 文字色や背景色
+などの学習画像を生成する要件と層の最適化が不十分なためだと考えられる . 今後の課題と
+して , 精度の向上を目指していきたい .</details></dd>
+	</dl>
+
+
+	<h3>セッション4 情報科学若手の会 特別セッション 10:40 - 12:00</h3>
+	<dl class="presentation">
+		<dt>第51回情報科学若手の会開催報告</dt>
+		<dd>黒崎優太 (株式会社サイバーエージェント)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>イマドキと言われる言語機能について</dt>
+		<dd>志村舜琳 (Idein Inc.)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>Cコンパイラを利用したRubyのJITコンパイラ</dt>
+		<dd>国分崇志 (Arm Treasure Data, Inc.)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>CTFと現実世界</dt>
+		<dd>市川遼 (東京農工大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+
+	<h3>招待講演 13:30 - 15:00</h3>
+	<dl class="presentation">
+		<dt>富士通　農業×ICTの取り組み　酒米栽培実証および醸造AI実証などの事例を交えて</dt>
+		<dd>加納正裕（富士通株式会社）, 菊地亮太（株式会社富士通研究所）</dd>
+
+		<dd><details><summary>概要</summary>富士通は2008年より4年間の農業現場における実証実験を踏まえて, 2012年には食・農クラウド「Akisai」を発表, ニーズに合わせて進化させてきました. そのような農業分野に対するICT支援の取り組みについて, 酒米栽培実証などの事例や実証現場の声などを交えてご紹介いたします. また, 2018年4月より旭酒造と富士通研究所は, 富士通研究所が開発した日本酒造りを支援するAI予測モデルを用いて, 旭酒造が製造・販売する日本酒「獺祭」の醸造を行う共同実証実験を実施しましたので, 実証試験の概要についてもご紹介いたします. </details></dd>
+
+	</dl>
+
+	<h3>セッション5 15:20 - 16:40</h3>
+	<dl class="presentation">
+		<dt>eJSVM における対話的なプログラミング環境の実現</dt>
+		<dd>大林健造, 岩崎英哉 (電気通信大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>ランダムな変異を用いたバグ入りプログラムの生成</dt>
+		<dd>寺田実 (電気通信大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+
+	<h3>山内奨励賞表彰・受賞講演, スポンサー講演 (サイボウズ株式会社) 17:00 - 18:00</h3>
+	<dl class="presentation">
+		<dt>山内奨励賞受賞論文: Linuxアプリケーションバイナリにおけるコンパイラセキュリティオプションの有効性の静的解析</dt>
+		<dd>近藤秀太, 渡辺亮平, 菅原捷汰, 横山雅展 (明治大学大学院), 中村慈愛 (明治大学), 須崎有康 (産業技術総合研究所), 齋藤孝道 (明治大学); 発表者: 菅原 捷汰（明治大学）</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+
+	<h4>夕食 18:00</h4>
+	<h4>夜のセッション 19:30 - </h4>
+
+	<br />
+
+	<h2>第3日 1月13日</h2>
+	<h3>セッション6 9:00 - 10:20</h3>
+	<dl class="presentation">
+		<dt>解析表現文法をベースにしたトランスパイラフレームワークの設計と実装</dt>
+		<dd>加瀬豊, 渡邉遥輔, 多田拓, 山口大輔 (横浜国立大学), 倉光君郎 (日本女子大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>並行プログラムのPartial Store Ordering での実行をモデル検査するためのRelease メモリバリア</dt>
+		<dd>鵜川始陽, 松元稿如, 飯干寛幸 (高知工科大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+
+
+	<h3>セッション7 10:40 - 12:00</h3>
+	<dl class="presentation">
+		<dt>初期局面の有利不利に適応したレーティング手法の検証</dt>
+		<dd>高尾海州, 松崎公紀 (高知工科大学)</dd>
+		<dd><details><summary>概要</summary></details></dd>
+	</dl>
+	<dl class="presentation">
+		<dt>マクロ回転によるルービック・キューブ完成術</dt>
+		<dd>和田英一 (IIJ技術研究所)</dd>
+		<dd><details><summary>概要</summary>2018 年夏のプロシンの「今そこにあるルービックキューブを解くツール」に触発され , 私
+流の「ルービック・キューブの完成法を指示する」プログラムについて話したい .
+キューブの現状はキーボードから指定順に小体の面の色を入力する .
+入力状態から完成形へ戻すには , 表題に示す「マクロ回転」だけを使う .
+完成形へ戻す手順は , 島内「ルービック・キューブ免許皆伝」にある単純な位置関係の小体に関
+わる基本的な
+• 同一面内の 3 個の 2 面体の循環
+• 同一面内の 3 個の 3 面体の循環
+• 相隣る 2 個の 2 面体の転向
+• 相隣る 2 個の 3 面体の転向
+の 4 種だけを「回転のマクロ」として用いて , 小体の位置を動かし , 次に向きを合わせる . 完成へ
+の指示は , 使ったマクロに対応する単位操作の列を表示して行う .
+長所はプログラムが簡単なこと , 短所は単位操作の手順がかなり長い ( 約 300 手～ 450 手 分散は
+大きい ) ことである . 従って計算機のシミュレーションを眺めるのは楽しいが , 人手で実行する気
+はあまりしない .
+</details></dd>
+		<dd><details><summary>概要test（リスト構造を考慮）</summary>2018 年夏のプロシンの「今そこにあるルービックキューブを解くツール」に触発され , 私
+流の「ルービック・キューブの完成法を指示する」プログラムについて話したい .
+キューブの現状はキーボードから指定順に小体の面の色を入力する .
+入力状態から完成形へ戻すには , 表題に示す「マクロ回転」だけを使う .
+完成形へ戻す手順は , 島内「ルービック・キューブ免許皆伝」にある単純な位置関係の小体に関
+わる基本的な
+<ul>
+<li>同一面内の 3 個の 2 面体の循環</li>
+<li>同一面内の 3 個の 3 面体の循環</li>
+<li>相隣る 2 個の 2 面体の転向</li>
+<li>相隣る 2 個の 3 面体の転向</li>
+</ul>
+の 4 種だけを「回転のマクロ」として用いて , 小体の位置を動かし , 次に向きを合わせる . 完成へ
+の指示は , 使ったマクロに対応する単位操作の列を表示して行う .
+長所はプログラムが簡単なこと , 短所は単位操作の手順がかなり長い ( 約 300 手～ 450 手 分散は
+大きい ) ことである . 従って計算機のシミュレーションを眺めるのは楽しいが , 人手で実行する気
+はあまりしない .
+</details></dd>
+	</dl>
+
+	<h4> 閉会 12:00 - 12:10</h4>
+
+	<hr>
+
+	<div style="text-align: center;">
+		<div style="display: inline-block;vertical-align: top;">
+			Sponsored by 株式会社フィックスターズ<br>
+			<a href="https://www.fixstars.com/">
+				<img style="background-color: white;" width="200px" src="Fixstars_logo_web_tagline.png" alt="株式会社フィックスターズ">
+			</a>
+		</div>
+		<div style="display: inline-block;vertical-align: top;margin-left: 20px;">
+			Sponsored by サイボウズ株式会社<br>
+			<a href="https://cybozu.co.jp/">
+				<img style="background-color: white;padding: 18px;" width="200px" src="logo_cybozu_Horizon_rgb.png" alt="サイボウズ株式会社">
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>
