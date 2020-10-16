@@ -80,6 +80,11 @@ main h2 {
     color: #000000;
 }
 
+span.strong {
+    color: #ff0000;
+    font-weight: bold;
+}
+
 address ul li {
     line-height: 150%;
 }
