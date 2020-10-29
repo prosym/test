@@ -45,6 +45,18 @@ main section#about ul.topics > li {
     margin-bottom: 0.5em;
 }
 
+main section#fee table {
+    border-collapse: collapse;
+    border: 1px solid #333333;
+    line-height: 1.5;
+}
+
+main section#fee table td {
+    border-collapse: collapse;
+    border: 1px solid #333333;
+    padding: 3px;
+}
+
 main section#type ul.types > li {
     margin-bottom: 0.5em;
 }
