@@ -61,6 +61,10 @@ main section#type ul.types > li {
     margin-bottom: 0.5em;
 }
 
+main#cfa h2 {
+    font-size: 1em;
+}
+
 main#program h2 {
     font-size: 1.2em;
 }
