@@ -61,6 +61,53 @@ main section#type ul.types > li {
     margin-bottom: 0.5em;
 }
 
+main#program h2 {
+    font-size: 1.2em;
+}
+
+main#program section#day1 {
+    margin-left: 2em;
+}
+
+main#program section#day2 {
+    margin-left: 2em;
+}
+
+main#program dl.session {
+    margin-left: 2em;
+}
+
+main#program dl.session dt {
+    margin-top: 1em;
+}
+
+main#program dd.abstract details summary:hover {
+    cursor: pointer;
+    background-color: #bbeebb;
+}
+
+main#program dd.abstract details[open] summary:after {
+    transform: rotate(90deg);
+}
+
+main#program dd.abstract blockquote {
+    border: #888888 1px solid;
+    margin: 0em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    background-color: #bbeebb;
+    white-space: pre-wrap;
+}
+
+main#program h3 {
+    font-size: 1em;
+
+    border-bottom: #888888 thin solid;
+    border-left: #888888 thin solid;
+
+    padding: 0.4em;
+}
+
 address {
     margin-left: 1em;
     margin-right: 1em;
