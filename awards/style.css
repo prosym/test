@@ -1,0 +1,70 @@
+body {
+    background-color: #ccffcc;
+}
+
+main {
+    color: black;
+}
+
+main > h1 {
+    margin: 1em;
+}
+
+main > div.content {
+    margin: 2em;
+}
+
+main p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: 0.5em;
+    line-height: 150%;
+}
+
+main section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+main dl.awards dt {
+    margin-top: 1.5em;
+}
+
+main dl.awards dd {
+    margin-left: 4em;
+    display: list-item;
+    list-style-type: disc;
+}
+
+nav {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #336699;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+main h2 {
+    color: #000000;
+}
+
+a:link {
+    color: #336699;
+}
+
+a:visited {
+}
+
+a:active {
+    color: #000066;
+}
+
+a:hover {
+    color: #00ff00;
+}
