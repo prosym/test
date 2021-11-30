@@ -174,3 +174,12 @@ code.email {
 code.url {
     font-family: monospace;
 }
+
+div#sponsors {
+    text-align: center;
+}
+
+div#sponsor {
+    display: inline-block;
+    vertical-align: top;
+}
