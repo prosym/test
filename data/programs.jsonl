@@ -5,7 +5,7 @@
 {"type": "presentation", "subject": "関数の関数をn回微分するためのサブルーチンとエルミット多項式H<sub>k</sub>(<i>x</i>)のサブルーチン", "authors": [{"name": "戸田英雄"}, {"name": "山内二郎"}], "page": "30", "index_original": "3", "filename": "WPRO1960A03.pdf"}
 {"type": "presentation", "subject": "エラトステネスのふるいによる素数の計算について", "authors": [{"name": "新井克彦"}], "page": "45", "index_original": "4", "filename": "WPRO1960A04.pdf"}
 {"type": "presentation", "subject": "ブロック・ダイヤグラム・シミュレータ", "authors": [{"name": "田村康男"}], "page": "51", "index_original": "5", "filename": "WPRO1960A05.pdf"}
-{"type": "presentation", "subject": "Session Aの討論", "authors": [{"name": "63"}], "index_original": "6", "filename": "WPRO1960A06.pdf"}
+{"type": "presentation", "subject": "Session Aの討論", "page": "63", "index_original": "6", "filename": "WPRO1960A06.pdf"}
 {"type": "session", "title": "線形計算及び固有値", "index_original": "B"}
 {"type": "presentation", "subject": "行列の固有値", "authors": [{"name": "島内武彦"}], "page": "67", "index_original": "1", "filename": "WPRO1960B01.pdf"}
 {"type": "presentation", "subject": "島内に対する討論", "authors": [{"name": "松谷泰行"}], "page": "79", "index_original": "2", "filename": "WPRO1960B02.pdf"}
@@ -15,7 +15,7 @@
 {"type": "session", "title": "高精度計算", "index_original": "C"}
 {"type": "presentation", "subject": "一二の慣用計算におけるNumerical Instabilityについて", "authors": [{"name": "宇野利雄"}], "page": "121", "index_original": "1", "filename": "WPRO1960C01.pdf"}
 {"type": "presentation", "subject": "行列式その他のexact calculationに対する新方法", "authors": [{"name": "高橋秀俊"}, {"name": "石橋善弘"}], "page": "132", "index_original": "2", "filename": "WPRO1960C02.pdf"}
-{"type": "presentation", "subject": "Session Cの講演要約及び討論", "authors": [{"name": "151"}], "index_original": "3", "filename": "WPRO1960C03.pdf"}
+{"type": "presentation", "subject": "Session Cの講演要約及び討論", "page": "151", "index_original": "3", "filename": "WPRO1960C03.pdf"}
 {"type": "session", "title": "自動プログラミング", "index_original": "D"}
 {"type": "presentation", "subject": "ALGOLの文法", "authors": [{"name": "森口繁一"}], "page": "155", "index_original": "1", "filename": "WPRO1960D01.pdf"}
 {"type": "presentation", "subject": "FACOM-202に使用されるAutomatic Coding Routineについて", "authors": [{"name": "井上謙蔵"}, {"name": "金光良衛"}], "page": "178", "index_original": "2", "filename": "WPRO1960D02.pdf"}
@@ -31,7 +31,7 @@
 {"type": "symposium", "index": "2", "year": "1961"}
 {"type": "session", "title": "論理設計", "index_original": "A"}
 {"type": "presentation", "subject": "PC-2におけるオーバー・フローの取扱いについて", "authors": [{"name": "後藤英一"}], "page": "A-1", "index_original": "1", "filename": "WPRO1961A01.pdf"}
-{"type": "presentation", "subject": "浮動小数点計算における絶対値最小の非零数について 桂重 俊,高橋 理", "authors": [{"name": "A-7"}], "index_original": "2", "filename": "WPRO1961A02.pdf"}
+{"type": "presentation", "subject": "浮動小数点計算における絶対値最小の非零数について", "authors": [{"name": "桂重 俊"}, {"name": "高橋 理"}], "page": "A-7", "index_original": "2", "filename": "WPRO1961A02.pdf"}
 {"type": "session", "title": "自動プログラミング", "index_original": "B"}
 {"type": "presentation", "subject": "算法言語ALGOL 60", "authors": [{"name": "清水留三郎"}], "page": "B-1", "index_original": "1", "filename": "WPRO1961B01.pdf"}
 {"type": "presentation", "subject": "MUCE SYSTEMについて", "authors": [{"name": "菅 忠義"}, {"name": "関本彰次"}, {"name": "魚田勝臣"}], "page": "B-39", "index_original": "2", "filename": "WPRO1961B02.pdf"}
@@ -350,7 +350,7 @@
 {"type": "presentation", "subject": "素数の計算", "authors": [{"name": "中島勝也"}], "page": "E-20", "index_original": "2", "filename": "WPRO1970E02.pdf"}
 {"type": "session", "title": "\"夏のシンポジウム\"報告集", "index_original": "F"}
 {"type": "presentation", "subject": "コンパイラ自動作成シンポジウム報告", "authors": [{"name": "萩原 宏"}], "page": "F-1", "index_original": "1", "filename": "WPRO1970F01.pdf"}
-{"type": "presentation", "subject": "第2回情報科学「若手の会」夏の会報告", "authors": [{"name": "F-3"}], "index_original": "2", "filename": "WPRO1970F02.pdf"}
+{"type": "presentation", "subject": "第2回情報科学「若手の会」夏の会報告", "page": "F-3", "index_original": "2", "filename": "WPRO1970F02.pdf"}
 {"type": "symposium", "index": "12", "year": "1971"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "ヒドンラインアルゴリズムとデータ構造", "authors": [{"name": "高橋 栄"}], "page": "1", "index_original": "1", "filename": "WPRO1971A01.pdf"}
@@ -393,7 +393,7 @@
 {"type": "presentation", "subject": "電子回路の動作シミュレーション", "authors": [{"name": "佐藤昭治"}, {"name": "勝枝嶺雄"}, {"name": "氏家一彬"}], "page": "22", "index_original": "2", "filename": "WPRO1972B02.pdf"}
 {"type": "presentation", "subject": "計算機システムのシミュレーションとその効率について", "authors": [{"name": "金沢正憲"}, {"name": "萩原 宏"}, {"name": "北川 一"}], "page": "39", "index_original": "3", "filename": "WPRO1972B03.pdf"}
 {"type": "presentation", "subject": "システム・シミュレーションの1解法とその応用例", "authors": [{"name": "原田紀夫"}, {"name": "久保秀士"}, {"name": "三上 徹"}], "page": "53", "index_original": "4", "filename": "WPRO1972B04.pdf"}
-{"type": "presentation", "subject": "休憩", "authors": [{"name": "67"}], "index_original": "5", "filename": "WPRO1972B05.pdf"}
+{"type": "presentation", "subject": "休憩", "page": "67", "index_original": "5", "filename": "WPRO1972B05.pdf"}
 {"type": "presentation", "subject": "KSIM --統計値の自動収集を考えたシミュレーション言語", "authors": [{"name": "山本喜一"}], "page": "68", "index_original": "6", "filename": "WPRO1972B06.pdf"}
 {"type": "presentation", "subject": "ファンクションキーによる会話型ディジタルシミュレーション", "authors": [{"name": "矢田光治"}, {"name": "田中 隆"}, {"name": "平塚尚一"}, {"name": "国岡利行"}], "page": "82", "index_original": "7", "filename": "WPRO1972B07.pdf"}
 {"type": "presentation", "subject": "オンライン・シミュレータSIMBOL", "authors": [{"name": "山本欣子"}, {"name": "松本青樹"}, {"name": "立花英理子"}, {"name": "小沢友則"}], "page": "92", "index_original": "8", "filename": "WPRO1972B08.pdf"}
@@ -403,14 +403,14 @@
 {"type": "presentation", "subject": "COMによるアニメーション--地震応答シミュレーション結果の表示--", "authors": [{"name": "高瀬啓元"}, {"name": "堀越清視"}, {"name": "平野隆久"}], "page": "131", "index_original": "1", "filename": "WPRO1972C01.pdf"}
 {"type": "session", "index_original": "D"}
 {"type": "presentation", "subject": "工業用計算機言語の開発と標準化の動向", "authors": [{"name": "須藤 勝"}], "page": "141", "index_original": "1", "filename": "WPRO1972D01.pdf"}
-{"type": "presentation", "subject": "休憩", "authors": [{"name": "154"}], "index_original": "2", "filename": "WPRO1972D02.pdf"}
+{"type": "presentation", "subject": "休憩", "page": "154", "index_original": "2", "filename": "WPRO1972D02.pdf"}
 {"type": "presentation", "subject": "システム制御シンポジウム報告", "authors": [{"name": "田中 明"}, {"name": "淵 一博"}], "page": "155", "index_original": "3", "filename": "WPRO1972D03.pdf"}
 {"type": "presentation", "subject": "情報公害シンポジウム報告", "authors": [{"name": "一松 信"}, {"name": "石田晴久"}], "page": "159", "index_original": "4", "filename": "WPRO1972D04.pdf"}
 {"type": "session", "index_original": "E"}
 {"type": "presentation", "subject": "最近の汎用グラフィック言語", "authors": [{"name": "出羽 洋"}, {"name": "山本欣子"}], "page": "163", "index_original": "1", "filename": "WPRO1972E01.pdf"}
 {"type": "presentation", "subject": "LADD: 描画用言語とそのデータ構造について", "authors": [{"name": "守屋慎次"}, {"name": "山本和彦"}, {"name": "間野浩太郎"}], "page": "174", "index_original": "2", "filename": "WPRO1972E02.pdf"}
 {"type": "presentation", "subject": "表言語の提案--汎用二次元プログラミング言語とその変換アルゴリズムについて", "authors": [{"name": "守屋慎次"}, {"name": "平松啓二"}], "page": "195", "index_original": "3", "filename": "WPRO1972E03.pdf"}
-{"type": "presentation", "subject": "休憩", "authors": [{"name": "206"}], "index_original": "4", "filename": "WPRO1972E04.pdf"}
+{"type": "presentation", "subject": "休憩", "page": "206", "index_original": "4", "filename": "WPRO1972E04.pdf"}
 {"type": "presentation", "subject": "論理関係処理言語LORELのコンパイラの構成", "authors": [{"name": "片山卓也"}, {"name": "日比野靖"}, {"name": "榎本肇"}], "page": "207", "index_original": "5", "filename": "WPRO1972E05.pdf"}
 {"type": "presentation", "subject": "算法言語REAL", "authors": [{"name": "金山 裕"}], "page": "224", "index_original": "6", "filename": "WPRO1972E06.pdf"}
 {"type": "presentation", "subject": "グループ管理用モニタ", "authors": [{"name": "石田晴久"}, {"name": "長谷部紀元"}, {"name": "野本征子"}], "page": "230", "index_original": "7", "filename": "WPRO1972E07.pdf"}
@@ -419,7 +419,7 @@
 {"type": "presentation", "subject": "分散制御型インテリジェント・ターミナル・システム:HILIGHTの概要", "authors": [{"name": "久保隆重"}, {"name": "高橋 栄"}, {"name": "新井全勝"}, {"name": "今井和子"}, {"name": "高橋延匡"}], "page": "267", "index_original": "1", "filename": "WPRO1972F01.pdf"}
 {"type": "presentation", "subject": "スカラ空間の特徴とその性質", "authors": [{"name": "榎本 肇"}, {"name": "堂下修司"}, {"name": "村上孝也"}], "page": "278", "index_original": "2", "filename": "WPRO1972F02.pdf"}
 {"type": "presentation", "subject": "高精度数により丸め誤差なしで連立1次方程式をとくFORTRANプログラム", "authors": [{"name": "中島勝也"}, {"name": "高林茂樹"}], "page": "287", "index_original": "3", "filename": "WPRO1972F03.pdf"}
-{"type": "presentation", "subject": "休憩", "authors": [{"name": "294"}], "index_original": "4", "filename": "WPRO1972F04.pdf"}
+{"type": "presentation", "subject": "休憩", "page": "294", "index_original": "4", "filename": "WPRO1972F04.pdf"}
 {"type": "presentation", "subject": "最良近似式の資料", "authors": [{"name": "戸田英雄"}, {"name": "高山文雄"}], "page": "295", "index_original": "5", "filename": "WPRO1972F05.pdf"}
 {"type": "presentation", "subject": "入出力割込機能を有するミニコン・システムのシミュレーション", "authors": [{"name": "小林佑光"}, {"name": "長谷部紀元"}, {"name": "井森正敏"}, {"name": "大保信夫"}, {"name": "国井利泰"}, {"name": "高橋秀俊"}], "page": "309", "index_original": "6", "filename": "WPRO1972F06.pdf"}
 {"type": "presentation", "subject": "第4回情報科学「若手の会」夏の会報告", "page": "319", "index_complemented": "R01", "filename": "WPRO1972R01.pdf"}
