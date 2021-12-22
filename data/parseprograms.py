@@ -43,7 +43,7 @@ for newline in iter(sys.stdin.readline, ""):
                 "authors": presentation_data[2],
             }
             if presentation_data[3]:
-                presentation["page"] = presentation_data[3]
+                presentation["first_page"] = presentation_data[3]
         elif len(presentation_data) == 3:
             presentation = {
                 "type": "presentation",

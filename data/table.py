@@ -32,10 +32,14 @@ for newline in iter(sys.stdin.readline, ""):
                     affiliations_list.append(author['affiliation'])
         if len(affiliations_list) > 0 and len(authors_list) != len(affiliations_list):
             raise 'Invalid'
-        if 'page' in e:
-            first_page = e['page']
+        if 'first_page' in e:
+            first_page = e['first_page']
         else:
             first_page = ""
+        if 'last_page' in e:
+            last_page = e['last_page']
+        else:
+            last_page = ""
         print("Symposium\t{subject}\tJa\t\t{published_date}\t{title_en}\t{title_other}\t{affiliation_ja}\t{affiliation_en}\t{author_ja}\t{author_en}\t{abstract_ja}\t{abstract_en}\t{sig_name}\t{filename}\t{file_published_date}\t{price_non_member}\t{price_member}\t{license}\t{record_id}\t{magazine}\t{volume}\t{number}\t{first_page}\t{last_page}\t{issue_date}".format(
             subject=e['subject'],
             published_date=starting_date,
@@ -58,7 +62,7 @@ for newline in iter(sys.stdin.readline, ""):
             volume=year,
             number="",
             first_page=first_page,
-            last_page="",
+            last_page=last_page,
             issue_date=year,
         ), file=f)
     elif e['type'] == 'session':
