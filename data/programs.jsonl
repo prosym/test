@@ -1,4 +1,4 @@
-{"type": "symposium", "index": "1", "year": "1960"}
+{"type": "symposium", "index": "1", "year": "1960", "starting_date": "1960-01-10", "ending_date": "1960-01-12"}
 {"type": "session", "title": "サブルーチン(関数近似を含む)", "index_original": "A"}
 {"type": "presentation", "subject": "大型計算機用関数近似についての一つの試み", "authors": [{"name": "山内,二郎"}], "page": "1", "index_original": "1", "filename": "WPRO1960A01.pdf"}
 {"type": "presentation", "subject": "山内の報告に対する討論", "authors": [{"name": "渋谷,政昭"}], "page": "28", "index_original": "2", "filename": "WPRO1960A02.pdf"}
