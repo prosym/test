@@ -1,4 +1,4 @@
-{"type": "symposium", "index": "1", "year": "1960", "starting_date": "1960-01-10", "ending_date": "1960-01-12"}
+{"type": "symposium", "index": "1", "year": "1960", "starting_date": "1960-01-10", "ending_date": "1960-01-12", "venue": "大磯ホテル"}
 {"type": "session", "title": "サブルーチン(関数近似を含む)", "index_original": "A"}
 {"type": "presentation", "subject": "大型計算機用関数近似についての一つの試み", "authors": [{"name": "山内,二郎"}], "first_page": "1", "last_page": "27", "index_original": "1", "filename": "WPRO1960A01.pdf"}
 {"type": "presentation", "subject": "山内の報告に対する討論", "authors": [{"name": "渋谷,政昭"}], "first_page": "28", "last_page": "29", "index_original": "2", "filename": "WPRO1960A02.pdf"}
@@ -28,7 +28,7 @@
 {"type": "presentation", "subject": "U.L.の簡単なformulaの機械によるmoofの作成について", "authors": [{"name": "杉林,益太郎"}], "first_page": "243", "last_page": "250", "index_original": "4", "filename": "WPRO1960E04.pdf"}
 {"type": "presentation", "subject": "LKの証明プログラミング", "authors": [{"name": "島内,剛一"}], "first_page": "251", "last_page": "253", "index_original": "5", "filename": "WPRO1960E05.pdf"}
 {"type": "presentation", "subject": "後記", "index_complemented": "Z01", "filename": "WPRO1960Z01.pdf"}
-{"type": "symposium", "index": "2", "year": "1961"}
+{"type": "symposium", "index": "2", "year": "1961", "starting_date": "1961-01-08", "ending_date": "1961-01-10", "venue": "大磯"}
 {"type": "session", "title": "論理設計", "index_original": "A"}
 {"type": "presentation", "subject": "PC-2におけるオーバー・フローの取扱いについて", "authors": [{"name": "後藤,英一"}], "first_page": "A-1", "index_original": "1", "filename": "WPRO1961A01.pdf"}
 {"type": "presentation", "subject": "浮動小数点計算における絶対値最小の非零数について", "authors": [{"name": "桂重,俊"}, {"name": "高橋,理"}], "first_page": "A-7", "index_original": "2", "filename": "WPRO1961A02.pdf"}
@@ -46,7 +46,7 @@
 {"type": "session", "title": "自由課題", "index_original": "E"}
 {"type": "presentation", "subject": "On an application of the pushdown technique", "authors": [{"name": "藤野,精一"}], "first_page": "E-1", "index_original": "1", "filename": "WPRO1961E01.pdf"}
 {"type": "presentation", "subject": "算術の問題を解くプログラム", "authors": [{"name": "清水,辰二郎"}], "first_page": "E-18", "index_original": "2", "filename": "WPRO1961E02.pdf"}
-{"type": "symposium", "index": "3", "year": "1962"}
+{"type": "symposium", "index": "3", "year": "1962", "starting_date": "1962-01-08", "ending_date": "1962-01-10"}
 {"type": "session", "title": "論理設計と自動プログラミング", "index_original": "A"}
 {"type": "presentation", "subject": "自動プログラミングにおけるsyntactic analysis", "authors": [{"name": "高橋,秀俊"}], "first_page": "A-1", "index_original": "1", "filename": "WPRO1962A01.pdf"}
 {"type": "presentation", "subject": "論理設計と自動プログラミング", "authors": [{"name": "高橋,茂"}], "first_page": "A-17", "index_original": "2", "filename": "WPRO1962A02.pdf"}
@@ -72,7 +72,7 @@
 {"type": "presentation", "subject": "Pattern Recognitionのための一つの試み", "authors": [{"name": "小松,彦三郎"}], "first_page": "E-11", "index_original": "2", "filename": "WPRO1962E02.pdf"}
 {"type": "presentation", "subject": "算術を解くプログラム", "authors": [{"name": "清水,辰二郎"}, {"name": "守本,浩"}], "first_page": "E-33", "index_original": "3", "filename": "WPRO1962E03.pdf"}
 {"type": "presentation", "subject": "記号処理と定理の機械的証明", "authors": [{"name": "高須,達"}], "first_page": "E-43", "index_original": "4", "filename": "WPRO1962E04.pdf"}
-{"type": "symposium", "index": "4", "year": "1963"}
+{"type": "symposium", "index": "4", "year": "1963", "starting_date": "1963-01-09", "ending_date": "1963-01-11"}
 {"type": "session", "title": "データ・プロセッシング", "index_original": "A"}
 {"type": "presentation", "subject": "データ処理理論の展望", "authors": [{"name": "関根,智明"}, {"name": "刀根,薫"}], "first_page": "A-1", "index_original": "1", "filename": "WPRO1963A01.pdf"}
 {"type": "session", "title": "自動プログラミング", "index_original": "B"}
@@ -102,7 +102,7 @@
 {"type": "presentation", "subject": "BTLの音波合成コンパイラ", "authors": [{"name": "藤村,靖"}], "first_page": "E-53", "index_original": "7", "filename": "WPRO1963E07.pdf"}
 {"type": "presentation", "subject": "マイクロプログラム制御計算機", "authors": [{"name": "萩原,宏"}], "first_page": "E-57", "index_original": "8", "filename": "WPRO1963E08.pdf"}
 {"type": "presentation", "subject": "汎用大型電子計算機のInstruction systemについて", "authors": [{"name": "村田,健郎"}], "first_page": "E-62", "index_original": "9", "filename": "WPRO1963E09.pdf"}
-{"type": "symposium", "index": "5", "year": "1964"}
+{"type": "symposium", "index": "5", "year": "1964", "starting_date": "1964-01-08", "ending_date": "1964-01-10", "venue": "伊東ハヤトホテル"}
 {"type": "session", "title": "システムプログラム-1", "index_original": "S1"}
 {"type": "presentation", "subject": "PROGRAM GENERATOR \"PREMAP\"", "authors": [{"name": "和田,英一"}, {"name": "原田,睦明"}], "first_page": "S1-1", "index_original": "1", "index_complemented": "S11", "filename": "WPRO1964S11.pdf"}
 {"type": "presentation", "subject": "NKモニタによる技術計算の運営", "authors": [{"name": "石田,康勝"}], "first_page": "S1-13", "index_original": "2", "index_complemented": "S12", "filename": "WPRO1964S12.pdf"}
@@ -141,7 +141,7 @@
 {"type": "presentation", "subject": "ある種の非線型常微分方程式の境界値問題数値解法", "authors": [{"name": "高田,勝"}], "first_page": "N-52", "index_original": "6", "index_complemented": "N06", "filename": "WPRO1964N06.pdf"}
 {"type": "presentation", "subject": "静電界のSynthesis E<sup>*</sup>", "authors": [{"name": "門倉,敏夫"}, {"name": "山本,浩"}], "first_page": "N-71", "index_original": "7", "index_complemented": "N07", "filename": "WPRO1964N07.pdf"}
 {"type": "presentation", "subject": "正規分布に関する近似関数", "authors": [{"name": "山内,二郎"}], "first_page": "N-107", "index_original": "8", "index_complemented": "N08", "filename": "WPRO1964N08.pdf"}
-{"type": "symposium", "index": "6", "year": "1965"}
+{"type": "symposium", "index": "6", "year": "1965", "starting_date": "1965-01-12", "ending_date": "1965-01-14"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "実時間制御とその問題点", "authors": [{"name": "穂坂,衛"}], "first_page": "A-1", "index_original": "1", "filename": "WPRO1965A01.pdf"}
 {"type": "presentation", "subject": "東京オリンピックに使われたリアルタイム・システムについて", "authors": [{"name": "竹下,享"}], "first_page": "A-7", "index_original": "2", "filename": "WPRO1965A02.pdf"}
@@ -351,7 +351,7 @@
 {"type": "session", "title": "\"夏のシンポジウム\"報告集", "index_original": "F"}
 {"type": "presentation", "subject": "コンパイラ自動作成シンポジウム報告", "authors": [{"name": "萩原,宏"}], "first_page": "F-1", "index_original": "1", "filename": "WPRO1970F01.pdf"}
 {"type": "presentation", "subject": "第2回情報科学「若手の会」夏の会報告", "first_page": "F-3", "index_original": "2", "filename": "WPRO1970F02.pdf"}
-{"type": "symposium", "index": "12", "year": "1971"}
+{"type": "symposium", "index": "12", "year": "1971", "starting_date": "1971-01-12", "ending_date": "1971-01-14"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "ヒドンラインアルゴリズムとデータ構造", "authors": [{"name": "高橋,栄"}], "first_page": "1", "index_original": "1", "filename": "WPRO1971A01.pdf"}
 {"type": "presentation", "subject": "図系処理言語モデル", "authors": [{"name": "高沢,嘉光"}, {"name": "酒巻,恒一"}, {"name": "山崎,信雄"}], "first_page": "8", "index_original": "2", "filename": "WPRO1971A02.pdf"}
@@ -385,7 +385,7 @@
 {"type": "presentation", "subject": "グラフィック・ディスプレイ・シンポジウム報告", "authors": [{"name": "和田,英一"}], "first_page": "315", "index_complemented": "R01", "filename": "WPRO1971R01.pdf"}
 {"type": "presentation", "subject": "オペレーティング・システムズ・シンポジウム報告", "authors": [{"name": "淵,一博"}, {"name": "土居,範久"}], "first_page": "318", "index_complemented": "R02", "filename": "WPRO1971R02.pdf"}
 {"type": "presentation", "subject": "第3回 情報科学「若手の会」夏の会報告", "first_page": "323", "index_complemented": "R03", "filename": "WPRO1971R03.pdf"}
-{"type": "symposium", "index": "13", "year": "1972"}
+{"type": "symposium", "index": "13", "year": "1972", "starting_date": "1972-01-11", "ending_date": "1972-01-13"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "プラント設計とシミュレーション", "authors": [{"name": "中杉,浩"}], "first_page": "1", "index_original": "2", "filename": "WPRO1972A02.pdf"}
 {"type": "session", "index_original": "B"}
@@ -423,7 +423,7 @@
 {"type": "presentation", "subject": "最良近似式の資料", "authors": [{"name": "戸田,英雄"}, {"name": "高山,文雄"}], "first_page": "295", "index_original": "5", "filename": "WPRO1972F05.pdf"}
 {"type": "presentation", "subject": "入出力割込機能を有するミニコン・システムのシミュレーション", "authors": [{"name": "小林,佑光"}, {"name": "長谷部,紀元"}, {"name": "井森,正敏"}, {"name": "大保,信夫"}, {"name": "国井,利泰"}, {"name": "高橋,秀俊"}], "first_page": "309", "index_original": "6", "filename": "WPRO1972F06.pdf"}
 {"type": "presentation", "subject": "第4回情報科学「若手の会」夏の会報告", "first_page": "319", "index_complemented": "R01", "filename": "WPRO1972R01.pdf"}
-{"type": "symposium", "index": "14", "year": "1973"}
+{"type": "symposium", "index": "14", "year": "1973", "starting_date": "1973-01-10", "ending_date": "1973-01-12"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "プログラミング学習システム(CLASS)", "authors": [{"name": "鍛冶,勝三"}, {"name": "佐竹,紀男"}], "first_page": "1", "index_original": "2", "filename": "WPRO1973A02.pdf"}
 {"type": "presentation", "subject": "CODASYLのデータベース", "authors": [{"name": "植村,俊亮"}, {"name": "西村,恕彦"}], "first_page": "11", "index_original": "3-1", "index_complemented": "A03-1", "filename": "WPRO1973A03-1.pdf"}
@@ -457,7 +457,7 @@
 {"type": "presentation", "subject": "プログラムのデシジョン・テーブルおよび表プログラムへの変換", "authors": [{"name": "守屋,慎次"}, {"name": "務台,哲郎"}, {"name": "平松,啓二"}], "first_page": "188", "index_original": "6", "filename": "WPRO1973D06.pdf"}
 {"type": "session", "index_original": "E"}
 {"type": "presentation", "subject": "汎用グラフィック言語UNGL", "authors": [{"name": "山本,欣子"}, {"name": "出羽,洋"}], "first_page": "199", "index_original": "1", "filename": "WPRO1973E01.pdf"}
-{"type": "symposium", "index": "15", "year": "1974"}
+{"type": "symposium", "index": "15", "year": "1974", "starting_date": "1974-01-10", "ending_date": "1974-01-12"}
 {"type": "presentation", "subject": "巻頭言", "authors": [{"name": "山内,二郎"}], "index_complemented": "P01", "filename": "WPRO1974P01.pdf"}
 {"type": "session", "index_original": "A"}
 {"type": "presentation", "subject": "初等数学における概念の連結構造とその応用", "authors": [{"name": "長沢,勲"}], "first_page": "1", "index_original": "1", "filename": "WPRO1974A01.pdf"}
@@ -485,7 +485,7 @@
 {"type": "presentation", "subject": "マルチ・ミニコンピュータ・システム", "authors": [{"name": "田丸,啓吉"}, {"name": "藤谷,和男"}, {"name": "田中,哲男"}, {"name": "遠藤,則子"}], "first_page": "240", "index_original": "3", "filename": "WPRO1974D03.pdf"}
 {"type": "presentation", "subject": "大型機によるミニコンのプログラム・サポート", "authors": [{"name": "浅井,清"}, {"name": "稲見,泰生"}, {"name": "小沼,吉男"}], "first_page": "252", "index_original": "4", "filename": "WPRO1974D04.pdf"}
 {"type": "presentation", "subject": "ミニコンによる時分割システム", "authors": [{"name": "島内,剛一"}, {"name": "筧,捷彦"}, {"name": "加賀見,鉄雄"}], "first_page": "260", "index_original": "5", "filename": "WPRO1974D05.pdf"}
-{"type": "symposium", "index": "16", "year": "1975"}
+{"type": "symposium", "index": "16", "year": "1975", "starting_date": "1975-01-09", "ending_date": "1975-01-10"}
 {"type": "presentation", "subject": "まえがき", "index_complemented": "P01", "filename": "WPRO1975P01.pdf"}
 {"type": "presentation", "subject": "第16回 プログラミング・シンポジウムの準備にあたって", "index_complemented": "P02", "filename": "WPRO1975P02.pdf"}
 {"type": "presentation", "subject": "第16回 プログラミング・シンポジウム日程", "index_complemented": "P03", "filename": "WPRO1975P03.pdf"}
@@ -520,7 +520,7 @@
 {"type": "presentation", "subject": "計算機システム評価の数学的理論---システム性能の感度について---", "authors": [{"name": "原田,紀夫"}], "first_page": "332", "index_original": "29", "filename": "WPRO1975029.pdf"}
 {"type": "presentation", "subject": "ファイリングの新しい手法---中間パケットの構成による冗長度の改良---", "authors": [{"name": "加藤,一郎"}, {"name": "米田,清"}], "first_page": "343", "index_original": "30", "filename": "WPRO1975030.pdf"}
 {"type": "presentation", "subject": "新しいCOBOLコンパイラ検定システム(CCVS)紹介", "authors": [{"name": "植村,俊亮"}], "first_page": "359", "index_original": "31", "filename": "WPRO1975031.pdf"}
-{"type": "symposium", "index": "17", "year": "1976"}
+{"type": "symposium", "index": "17", "year": "1976", "starting_date": "1976-01-08", "ending_date": "1976-01-10"}
 {"type": "presentation", "subject": "まえがき", "index_complemented": "P01", "filename": "WPRO1976P01.pdf"}
 {"type": "presentation", "subject": "第17回 プログラミング・シンポジウムの準備にあたって", "index_complemented": "P02", "filename": "WPRO1976P02.pdf"}
 {"type": "presentation", "subject": "第17回 プログラミング・シンポジウムプログラム", "index_complemented": "P03", "filename": "WPRO1976P03.pdf"}
@@ -543,7 +543,7 @@
 {"type": "presentation", "subject": "ミニコンLISPの移し換え", "authors": [{"name": "石井,博"}, {"name": "前野,年紀"}], "first_page": "167", "index_original": "16", "filename": "WPRO1976016.pdf"}
 {"type": "presentation", "subject": "数式処理ALの特徴とその意義", "authors": [{"name": "池原,悟"}, {"name": "岡田,博"}], "first_page": "179", "index_original": "17", "filename": "WPRO1976017.pdf"}
 {"type": "presentation", "subject": "数式処理言語MSCSYMAについて", "authors": [{"name": "戸田,英雄"}, {"name": "三島,健稔"}], "first_page": "191", "index_original": "18", "filename": "WPRO1976018.pdf"}
-{"type": "symposium", "index": "18", "year": "1977"}
+{"type": "symposium", "index": "18", "year": "1977", "starting_date": "1977-01-12", "ending_date": "1977-01-14"}
 {"type": "presentation", "subject": "まえがき", "index_complemented": "P01", "filename": "WPRO1977P01.pdf"}
 {"type": "presentation", "subject": "第18回 プログラミング・シンポジウムの準備にあたって", "index_complemented": "P02", "filename": "WPRO1977P02.pdf"}
 {"type": "presentation", "subject": "第18回 プログラミング・シンポジウムプログラム", "index_complemented": "P03", "filename": "WPRO1977P03.pdf"}
@@ -579,7 +579,7 @@
 {"type": "presentation", "subject": "計測用インテリジェントステーションのソフトウエア", "authors": [{"name": "矢田,光治"}, {"name": "山浦,逸雄"}], "first_page": "187", "index_original": "36", "filename": "WPRO1977036.pdf"}
 {"type": "presentation", "subject": "汎用マークシート処理システム", "authors": [{"name": "近藤,頌子"}, {"name": "原田,賢一"}, {"name": "大野,義夫"}, {"name": "山本,喜一"}], "first_page": "194", "index_original": "37", "filename": "WPRO1977037.pdf"}
 {"type": "presentation", "subject": "九州工業大学情報処理教育センターのシステム開発・運用状況について", "authors": [{"name": "中山,泰雄"}, {"name": "深川,幸紀"}, {"name": "矢鳴,虎夫"}, {"name": "吉田,将"}], "first_page": "200", "index_original": "38", "filename": "WPRO1977038.pdf"}
-{"type": "symposium", "index": "19", "year": "1978"}
+{"type": "symposium", "index": "19", "year": "1978", "starting_date": "1978-01-11", "ending_date": "1978-01-13"}
 {"type": "presentation", "subject": "まえがき", "index_complemented": "P01", "filename": "WPRO1978P01.pdf"}
 {"type": "presentation", "subject": "第19回 プログラミング・シンポジウムの準備にあたって", "index_complemented": "P02", "filename": "WPRO1978P02.pdf"}
 {"type": "presentation", "subject": "第19回 プログラミング・シンポジウムプログラム", "index_complemented": "P03", "filename": "WPRO1978P03.pdf"}
@@ -602,7 +602,7 @@
 {"type": "presentation", "subject": "イオタ言語とイオタシステム--階層的プログラム開発とその検証のための言語の方法とシステム", "authors": [{"name": "中島,玲二"}, {"name": "中原,早生"}, {"name": "本田,道夫"}], "first_page": "121", "index_original": "27", "filename": "WPRO1978027.pdf"}
 {"type": "presentation", "subject": "関係データベース上の高度な質問応答過程について", "authors": [{"name": "古川,康一"}], "first_page": "133", "index_original": "28", "filename": "WPRO1978028.pdf"}
 {"type": "presentation", "subject": "ソフトウェアシステムの安全性とドメイン制御機構", "authors": [{"name": "星野,康夫"}, {"name": "江川,明人"}, {"name": "増田,龍彦"}], "first_page": "145", "index_original": "30", "filename": "WPRO1978030.pdf"}
-{"type": "symposium", "index": "20", "year": "1979"}
+{"type": "symposium", "index": "20", "year": "1979", "starting_date": "1979-01-09", "ending_date": "1979-01-11"}
 {"type": "presentation", "subject": "第20回 プログラミング・シンポジウム開催に際して", "index_complemented": "P01", "filename": "WPRO1979P01.pdf"}
 {"type": "presentation", "subject": "第20回 プログラミング・シンポジウムの準備にあたって", "index_complemented": "P02", "filename": "WPRO1979P02.pdf"}
 {"type": "presentation", "subject": "第20回 プログラミング・シンポジウム プログラム", "index_complemented": "P03", "filename": "WPRO1979P03.pdf"}
@@ -627,7 +627,7 @@
 {"type": "presentation", "subject": "プログラムの性質の実験的分析", "authors": [{"name": "深津,貞雄"}, {"name": "南澤,英雄"}, {"name": "亀田,壽夫"}], "first_page": "180", "index_original": "28", "filename": "WPRO1979028.pdf"}
 {"type": "presentation", "subject": "SOIR (Set Oriented Information Retrieval)ランゲージ", "authors": [{"name": "石井,義興"}, {"name": "西林,瑞夫"}, {"name": "中井,浩"}, {"name": "諸岡,徹"}], "first_page": "189", "index_original": "30", "filename": "WPRO1979030.pdf"}
 {"type": "presentation", "subject": "データベース設計システム", "authors": [{"name": "川越,恭二"}, {"name": "真名垣,昌夫"}], "first_page": "198", "index_original": "31", "filename": "WPRO1979031.pdf"}
-{"type": "symposium", "index": "21", "year": "1980"}
+{"type": "symposium", "index": "21", "year": "1980", "starting_date": "1980-01-08", "ending_date": "1980-01-10"}
 {"type": "presentation", "subject": "第21回 プログラミング・シンポジウム開催に際して", "index_complemented": "P01", "filename": "WPRO1980P01.pdf"}
 {"type": "presentation", "subject": "幹事長として", "index_complemented": "P02", "filename": "WPRO1980P02.pdf"}
 {"type": "presentation", "subject": "第21回 プログラミング・シンポジウム プログラム", "index_complemented": "P03", "filename": "WPRO1980P03.pdf"}
@@ -657,7 +657,7 @@
 {"type": "presentation", "subject": "マイクロプロセッサのミニコンシステムへの応用", "authors": [{"name": "筧,捷彦"}, {"name": "石井,博"}], "first_page": "195", "index_original": "29", "filename": "WPRO1980029.pdf"}
 {"type": "presentation", "subject": "データベース・マシンに適した研究用データベースAISの試作", "authors": [{"name": "有沢,博"}], "first_page": "203", "index_original": "31", "filename": "WPRO1980031.pdf"}
 {"type": "presentation", "subject": "分散型データベース(JIPNET-DDB)における問合せ変換", "authors": [{"name": "滝沢,誠"}, {"name": "浜中,栄治"}], "first_page": "212", "index_original": "32", "filename": "WPRO1980032.pdf"}
-{"type": "symposium", "index": "22", "year": "1981"}
+{"type": "symposium", "index": "22", "year": "1981", "starting_date": "1981-01-12", "ending_date": "1981-01-14"}
 {"type": "presentation", "subject": "第22回 プログラミング・シンポジウム開催に際して", "index_complemented": "P01", "filename": "WPRO1981P01.pdf"}
 {"type": "presentation", "subject": "この一年", "index_complemented": "P02", "filename": "WPRO1981P02.pdf"}
 {"type": "presentation", "subject": "第22回 プログラミング・シンポジウム プログラム", "index_complemented": "P03", "filename": "WPRO1981P03.pdf"}
@@ -685,7 +685,7 @@
 {"type": "presentation", "subject": "ハッシング技法における探索効率の改良について --多重予測子の評価と実験--", "authors": [{"name": "西原,清一"}], "first_page": "177", "index_original": "29", "filename": "WPRO1981029.pdf"}
 {"type": "presentation", "subject": "大型OSのユーザ・インターフェースの研究環境向き改造", "authors": [{"name": "長谷部,紀元"}, {"name": "鷹野,澄"}, {"name": "小沢,宏"}, {"name": "木村,友則"}, {"name": "石田,晴久"}], "first_page": "187", "index_original": "30", "filename": "WPRO1981030.pdf"}
 {"type": "presentation", "subject": "鉄道の最適な保線作業時間帯を決定する算法とデータ構造", "authors": [{"name": "中森,真理雄"}], "first_page": "197", "index_original": "32", "filename": "WPRO1981032.pdf"}
-{"type": "symposium", "index": "23", "year": "1982"}
+{"type": "symposium", "index": "23", "year": "1982", "starting_date": "1982-01-12", "ending_date": "1982-01-14"}
 {"type": "presentation", "subject": "第23回 プログラミング・シンポジウム開催に際して", "index_complemented": "P01", "filename": "WPRO1982P01.pdf"}
 {"type": "presentation", "subject": "一年また一年", "index_complemented": "P02", "filename": "WPRO1982P02.pdf"}
 {"type": "presentation", "subject": "第23回 プログラミング・シンポジウム プログラム", "index_complemented": "P03", "filename": "WPRO1982P03.pdf"}
@@ -711,7 +711,7 @@
 {"type": "presentation", "subject": "計算機による美の扱いの試み", "authors": [{"name": "佐々木,睦子"}, {"name": "佐々木,建昭"}], "first_page": "164", "index_original": "19", "filename": "WPRO1982019.pdf"}
 {"type": "presentation", "subject": "文字列の新高速処理手法について SNOBOL 3の場合", "authors": [{"name": "角田,博保"}], "first_page": "174", "index_original": "20", "filename": "WPRO1982020.pdf"}
 {"type": "presentation", "subject": "仮名漢字変換システムの専門用語辞書 田中康仁,", "authors": [{"name": "長田,孝治"}], "first_page": "184", "index_original": "21", "filename": "WPRO1982021.pdf"}
-{"type": "symposium", "index": "24", "year": "1983"}
+{"type": "symposium", "index": "24", "year": "1983", "starting_date": "1983-01-11", "ending_date": "1983-01-13"}
 {"type": "presentation", "subject": "目次", "index_complemented": "P01", "filename": "WPRO1983P01.pdf"}
 {"type": "presentation", "subject": "Pascal数値データに関する機械独立コード生成法", "authors": [{"name": "浜田,穂積"}], "first_page": "1", "index_original": "1", "filename": "WPRO1983001.pdf"}
 {"type": "presentation", "subject": "設計システム記述言語ADLの概要と機械設計における使用経験", "authors": [{"name": "長澤,勲"}, {"name": "古川,由美子"}, {"name": "荒牧,重登"}], "first_page": "7", "index_original": "2", "filename": "WPRO1983002.pdf"}
@@ -753,7 +753,7 @@
 {"type": "presentation", "subject": "画面エディタEMACSのユーザ特性について", "authors": [{"name": "奥乃,博", "affiliation": "日本電信電話公社"}], "index_original": "25-17", "filename": "WPRO1984017.pdf"}
 {"type": "presentation", "subject": "ビットマップディスプレイのためのプリティプリンタ", "authors": [{"name": "和田,英一", "affiliation": "東京大学"}], "index_original": "25-18", "filename": "WPRO1984018.pdf"}
 {"type": "presentation", "subject": "日本語によるデータベース検索システム", "authors": [{"name": "泉田,義男", "affiliation": "富士通研究所"}], "index_original": "25-19", "filename": "WPRO1984019.pdf"}
-{"type": "symposium", "index": "26", "year": "1985"}
+{"type": "symposium", "index": "26", "year": "1985", "starting_date": "1985-01-08", "ending_date": "1985-01-10"}
 {"type": "presentation", "subject": "動的複合実行方式に基づく統合的プログラミング環境", "authors": [{"name": "佐藤,豊"}, {"name": "板野,肯三"}], "first_page": "1", "index_original": "1", "filename": "WPRO1985001.pdf"}
 {"type": "presentation", "subject": "超時空プログラミングシステムUranus", "authors": [{"name": "中島,秀之"}], "first_page": "13", "index_original": "2", "filename": "WPRO1985002.pdf"}
 {"type": "presentation", "subject": "招待講演「新しい宇宙像」", "authors": [{"name": "森本,雅樹"}], "first_page": "25", "index_original": "3", "filename": "WPRO1985003.pdf"}
