@@ -1,0 +1,41 @@
+/*
+ * プログラミング・シンポジウム CSS [シンポジウム各回ページ用 2022 年度版]
+ *
+ * - 新しい CSS ファイルを毎年用意することを意図したものではありません。後年のページでこの CSS ファイルを使用しても大丈夫です。
+ * - ただし、この CSS ファイルを不用意に更新すると、過去のページが壊れる可能性があります。
+ * - スタイルを新しくしたくなった場合、この CSS ファイルを更新するのではなく、新しい style_YYYY.css を用意してください。
+ */
+@import url("./prosym.css");
+
+header {
+    background-color: #ddffdd;
+    top: 0;
+    padding: 1px 1px 1px 1px;
+    margin: 0 0 1em 0;
+}
+
+header nav h1 {
+    display: inline;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 28px;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    text-decoration: none;
+    padding: 0 10px !important;
+}
+
+header nav ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}

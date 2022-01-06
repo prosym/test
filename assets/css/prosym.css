@@ -1,0 +1,196 @@
+body {
+    background-color: #ccffcc;
+    margin: 0;
+    padding: 0;
+}
+
+aside#original {
+    margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 8px;
+    color: #555555;
+    border: #888888 1px solid;
+}
+
+aside#original p {
+    margin: 0px;
+    padding: 5px;
+    line-height: 100%;
+}
+
+aside#copyright {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+aside#copyright dl {
+    margin-left: 1em;
+}
+
+aside#copyright dl dt {
+    margin-left: 0;
+}
+
+aside#copyright dl dd {
+    margin-left: 0;
+}
+
+main {
+    color: black;
+}
+
+main > h1 {
+    margin: 1em;
+}
+
+main > div.content {
+    margin: 2em;
+}
+
+main p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: 0.5em;
+    line-height: 150%;
+}
+
+main section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+main section#about ul.topics > li {
+    margin-bottom: 0.5em;
+}
+
+main section#fee table {
+    border-collapse: collapse;
+    border: 1px solid #333333;
+    line-height: 1.5;
+}
+
+main section#fee table td {
+    border-collapse: collapse;
+    border: 1px solid #333333;
+    padding: 3px;
+}
+
+main section#type ul.types > li {
+    margin-bottom: 0.5em;
+}
+
+main#cfa h2 {
+    font-size: 1em;
+}
+
+main#program h2 {
+    font-size: 1.2em;
+}
+
+main#program section#day1 {
+    margin-left: 2em;
+}
+
+main#program section#day2 {
+    margin-left: 2em;
+}
+
+main#program dl.session {
+    margin-left: 2em;
+}
+
+main#program dl.session dt {
+    margin-top: 1em;
+}
+
+main#program dd.abstract details summary:hover {
+    cursor: pointer;
+    background-color: #bbeebb;
+}
+
+main#program dd.abstract details[open] summary:after {
+    transform: rotate(90deg);
+}
+
+main#program dd.abstract blockquote {
+    border: #888888 1px solid;
+    margin: 0em;
+    padding: 0.5em;
+    font-size: 0.9em;
+    background-color: #bbeebb;
+    white-space: pre-wrap;
+}
+
+main#program h3 {
+    font-size: 1em;
+
+    border-bottom: #888888 thin solid;
+    border-left: #888888 thin solid;
+
+    padding: 0.4em;
+}
+
+address#committee {
+    text-align: right;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-style: normal;
+    color: #333333;
+}
+
+nav {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+div.indent {
+    margin-left: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #336699;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+main h2 {
+    color: #000000;
+}
+
+span.strong {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+address ul li {
+    line-height: 150%;
+}
+
+a:link {
+    color: #336699;
+}
+
+a:visited {
+}
+
+a:active {
+    color: #000066;
+}
+
+a:hover {
+    color: #00ff00;
+}
+
+code.email {
+    font-family: monospace;
+}
+
+code.url {
+    font-family: monospace;
+}
